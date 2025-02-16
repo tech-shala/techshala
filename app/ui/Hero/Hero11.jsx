@@ -1,9 +1,9 @@
-import React from 'react';
-import parse from 'html-react-parser';
-import Button from '../Button';
-import SocialWidget from '../Widget/SocialWidget';
-import imgUrl from '../../../../public/images/hero_img_5.png'
-import Image from 'next/image';
+import React from "react";
+import parse from "html-react-parser";
+import Button from "../Button";
+import SocialWidget from "../Widget/SocialWidget";
+import imgUrl from "../../../public/images/hero_img_5.png";
+import Image from "next/image";
 
 export default function Hero11({
   introTitle,
@@ -21,7 +21,7 @@ export default function Hero11({
       <div className="cs-shape_1" />
       <div className="container">
         <div className="cs-hero_img_box">
-          <Image src={imgUrl} alt="Hero" placeholder='blur' />
+          <Image src={imgUrl} alt="Hero" placeholder="blur" />
           <div className="cs-hero_card cs-position_1">
             <h3 className="mb-0">{experienceNumber}</h3>
             <p className="mb-0">{experienceTitle}</p>

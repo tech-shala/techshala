@@ -1,7 +1,10 @@
 'use client';
+import { useEffect } from 'react';
 import Header from '@/app/ui/Header';
 import CustomCursor from '@/app/ui/CustomCursor';
 import Footer from '@/app/ui/Footer';
+// import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './scss/index.scss';
@@ -24,6 +27,23 @@ const openSans = Open_Sans({
 // };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true,
+      gestureOrientation: 'both',
+    });
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <html lang="en">
       <head>

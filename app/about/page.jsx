@@ -7,10 +7,10 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import TeamSlider from "@/app/ui/Slider/TeamSlider";
 import Spacing from "@/app/ui/Spacing";
-import aboutImg from '../../../public/images/about_img_1.jpeg'
-import aboutImg2 from '../../../public/images/about_img_2.jpeg'
-import aboutImg3 from '../../../public/images/about_img_3.jpeg'
-import aboutImg4 from '../../../public/images/about_img_4.jpeg'
+import aboutImg from '../../public/images/about_img_1.jpeg'
+import aboutImg2 from '../../public/images/about_img_2.jpeg'
+import aboutImg3 from '../../public/images/about_img_3.jpeg'
+import aboutImg4 from "../../public/images/about_img_4.jpeg";
 
 const funfaceData = [
   {
