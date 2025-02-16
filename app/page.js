@@ -18,12 +18,12 @@ import Card from "./ui/Card";
 // Hero Social Links
 const heroSocialLinks = [
   {
-    name: "Behance",
-    links: "/",
+    name: "Instagram",
+    links: "https://www.instagram.com/vp_vidyalankar/",
   },
   {
-    name: "Twitter",
-    links: "/",
+    name: "Facebook",
+    links: "https://www.facebook.com/Vidyalankar.VP/",
   },
 ];
 // FunFact Data

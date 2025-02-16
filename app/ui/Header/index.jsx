@@ -42,7 +42,7 @@ export default function Header({ variant }) {
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? "block" : "none"}` }}
                   >
-                    <li className="menu-item-has-children">
+                    {/* <li className="menu-item-has-children">
                       <Link href="/" onClick={() => setMobileToggle(false)}>
                         Home
                       </Link>
@@ -146,6 +146,11 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
+                    </li> */}
+                    <li>
+                      <Link href="/" onClick={() => setMobileToggle(false)}>
+                        Home
+                      </Link>
                     </li>
                     <li>
                       <Link
@@ -155,7 +160,28 @@ export default function Header({ variant }) {
                         About
                       </Link>
                     </li>
-                    <li className="menu-item-has-children">
+                    <li>
+                      <Link href="/team" onClick={() => setMobileToggle(false)}>
+                        Team
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/events"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Events
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/gallery"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Gallery
+                      </Link>
+                    </li>
+                    {/* <li className="menu-item-has-children">
                       <Link
                         href="/service"
                         onClick={() => setMobileToggle(false)}
@@ -182,8 +208,8 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link
                         href="/portfolio"
                         onClick={() => setMobileToggle(false)}
@@ -210,8 +236,8 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link href="/blog" onClick={() => setMobileToggle(false)}>
                         Blog
                       </Link>
@@ -235,8 +261,8 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
-                    <li className="menu-item-has-children">
+                    </li> */}
+                    {/* <li className="menu-item-has-children">
                       <Link href="/" onClick={() => setMobileToggle(false)}>
                         Pages
                       </Link>
@@ -284,7 +310,7 @@ export default function Header({ variant }) {
                           </li>
                         </ul>
                       </DropDown>
-                    </li>
+                    </li> */}
                   </ul>
                   <span
                     className={
@@ -298,7 +324,7 @@ export default function Header({ variant }) {
                   </span>
                 </Div>
               </Div>
-              <Div className="cs-main_header_right">
+              {/* <Div className="cs-main_header_right">
                 <Div className="cs-toolbox">
                   <span
                     className="cs-icon_btn"
@@ -312,13 +338,13 @@ export default function Header({ variant }) {
                     </span>
                   </span>
                 </Div>
-              </Div>
+              </Div> */}
             </Div>
           </Div>
         </Div>
       </header>
 
-      <Div
+      {/* <Div
         className={
           sideHeaderToggle ? "cs-side_header active" : "cs-side_header"
         }
@@ -355,7 +381,7 @@ export default function Header({ variant }) {
             <SocialWidget />
           </Div>
         </Div>
-      </Div>
+      </Div> */}
     </>
   );
 }
