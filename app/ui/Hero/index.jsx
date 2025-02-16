@@ -3,6 +3,7 @@ import parse from "html-react-parser";
 import Div from "../Div";
 import Button from "../Button";
 import VerticalLinks from "../VerticalLinks";
+import gsap from "gsap";
 
 export default function Hero({
   title,
@@ -36,9 +37,13 @@ export default function Hero({
         </Div>
       </Div>
       <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
-      <a href={scrollDownId} className="cs-down_btn">
+      <button
+        onClick={() => gsap.to(window, { scrollTo: { y: scrollDownId } })}
+        // href={scrollDownId}
+        className="cs-down_btn"
+      >
         .
-      </a>
+      </button>
     </Div>
   );
 }

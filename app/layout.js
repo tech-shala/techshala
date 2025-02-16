@@ -9,6 +9,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './scss/index.scss';
 import { Poppins, Open_Sans } from 'next/font/google';
+import gsap from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -43,6 +45,8 @@ export default function RootLayout({ children }) {
 
     return () => lenis.destroy();
   }, []);
+
+  gsap.registerPlugin(ScrollToPlugin);
 
   return (
     <html lang="en">
