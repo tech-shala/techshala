@@ -14,6 +14,7 @@ import TimelineSlider from "@/app/ui/Slider/TimelineSlider";
 import Spacing from "@/app/ui/Spacing";
 // import VideoModal from "@/app/ui/VideoModal";
 import Card from "./ui/Card";
+import { funfaceData } from "@/constants";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -27,24 +28,24 @@ const heroSocialLinks = [
   },
 ];
 // FunFact Data
-const funfaceData = [
-  {
-    title: "Global Happy Clients",
-    factNumber: "40K",
-  },
-  {
-    title: "Project Completed",
-    factNumber: "50K",
-  },
-  {
-    title: "Team Members",
-    factNumber: "245",
-  },
-  {
-    title: "Digital products",
-    factNumber: "550",
-  },
-];
+// const funfaceData = [
+//   {
+//     title: "Established",
+//     factNumber: "2019",
+//   },
+//   {
+//     title: "Workshops Conducted",
+//     factNumber: "500+",
+//   },
+//   {
+//     title: "Volunteers",
+//     factNumber: "50+",
+//   },
+//   {
+//     title: "Participants",
+//     factNumber: "150k+",
+//   },
+// ];
 // Portfolio Data
 const portfolioData = [
   {
@@ -78,9 +79,9 @@ export default function Home() {
     <>
       {/* Start Hero Section */}
       <Hero
-        title="Creativity In <br/>Our Blood Line"
-        subtitle="We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future."
-        btnText="Get a Quote"
+        title="Techshala <br/>Tech Committee"
+        subtitle="Techshala, where 'Tech' stands for Technology and 'Shala' means school, aims to make students technically sound through engaging events that make learning enjoyable."
+        btnText="Want to Collaborate?"
         btnLink="/contact"
         scrollDownId="#service"
         socialLinksHeading="Follow Us"
