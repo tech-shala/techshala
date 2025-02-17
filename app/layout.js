@@ -11,6 +11,7 @@ import './scss/index.scss';
 import { Poppins, Open_Sans } from 'next/font/google';
 import gsap from 'gsap';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import SplashCursor from './ui/SplashCursor';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
       <body className={`${openSans.variable} ${poppins.variable}`}>
         <Header />
         <CustomCursor />
+        <SplashCursor />
         {children}
         <Footer />
       </body>

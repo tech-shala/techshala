@@ -324,11 +324,11 @@ export default function Header({ variant }) {
                   </span>
                 </Div>
               </Div>
-              <Div className="cs-main_header_right">
+              {/* <Div className="cs-main_header_right">
                 <Link className="cs-site_branding" href="/">
                   <img src="/vp_logo_transparent.png" alt="Logo" />
                 </Link>
-              </Div>
+              </Div> */}
             </Div>
           </Div>
         </Div>
