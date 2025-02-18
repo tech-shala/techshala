@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${openSans.variable} ${poppins.variable}`}>
         <Header />
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <SplashCursor />
         {children}
         <Footer />

@@ -4,7 +4,7 @@ export const funfaceData = [
     factNumber: "2019",
   },
   {
-    title: "Workshops Conducted",
+    title: "Workshops Hosted",
     factNumber: "500+",
   },
   {

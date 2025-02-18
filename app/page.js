@@ -95,7 +95,7 @@ export default function Home() {
         <FunFact
           variant="cs-type1"
           title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+          subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
           data={funfaceData}
         />
       </div>
@@ -108,10 +108,10 @@ export default function Home() {
           <Div className="row">
             <Div className="col-xl-4">
               <SectionHeading
-                title="Services we can help you with"
-                subtitle="What Can We Do"
-                btnText="See All Services"
-                btnLink="/service"
+                title="What domains are we in?"
+                subtitle="Our Domains"
+                btnText="See All Events"
+                btnLink="/events"
               />
               <Spacing lg="90" md="45" />
             </Div>
@@ -120,43 +120,63 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="UI/UX design"
-                    link="/service/service-details"
+                    title="App Devlopment"
+                    link="/events?domain=app"
                     src="/images/service_1.jpeg"
-                    alt="Service"
+                    alt="App Domain"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="React.js Development"
-                    link="/service/service-details"
+                    title="Web Development"
+                    link="/events?domain=web"
                     src="/images/service_2.jpeg"
-                    alt="Service"
+                    alt="Web Domain"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Digital Marketing"
-                    link="/service/service-details"
+                    title="Blockchain Development"
+                    link="/events?domain=blockchain"
                     src="/images/service_3.jpeg"
-                    alt="Service"
+                    alt="Blockchain Domain"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
                 <Div className="col-lg-3 col-sm-6">
                   <Card
-                    title="Technology"
-                    link="/service/service-details"
+                    title="Cyber Security"
+                    link="/events?domain=cybersecurity"
                     src="/images/service_4.jpeg"
-                    alt="Service"
+                    alt="Cyber Security Domain"
                   />
                   <Spacing lg="0" md="30" />
                 </Div>
                 <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                <Div className="col-lg-3 col-sm-6">
+                  <Card
+                    title="AI / ML Development"
+                    link="/events?domain=aiml"
+                    src="/images/service_1.jpeg"
+                    alt="AI / ML Domain"
+                  />
+                  <Spacing lg="0" md="30" />
+                </Div>
+                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
+                <Div className="col-lg-3 col-sm-6">
+                  <Card
+                    title="IoT Development"
+                    link="/events?domain=iot"
+                    src="/images/service_2.jpeg"
+                    alt="IoT Domain"
+                  />
+                  <Spacing lg="0" md="30" />
+                </Div>
               </Div>
             </Div>
           </Div>
