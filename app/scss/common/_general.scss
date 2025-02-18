@@ -361,7 +361,16 @@ hr {
     pointer-events: none;
   }
 }
+.cs-form_field option {
+  padding: 10px;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+}
 
+.cs-form_field option:hover {
+  background-color: #0ba723;
+}
 .cs-form_field {
   display: block;
   width: 100%;
@@ -960,7 +969,7 @@ label {
 }
 
 .cs-page_heading.cs-style1 {
-  height: 650px;
+  height: 500px;
   padding: 120px 0 50px;
   position: relative;
   &::after {

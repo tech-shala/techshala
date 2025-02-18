@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Cta from "@/app/ui/Cta";
 import Div from "@/app/ui/Div";
@@ -7,29 +7,11 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import TeamSlider from "@/app/ui/Slider/TeamSlider";
 import Spacing from "@/app/ui/Spacing";
-import aboutImg from '../../public/images/about_img_1.jpeg'
-import aboutImg2 from '../../public/images/about_img_2.jpeg'
-import aboutImg3 from '../../public/images/about_img_3.jpeg'
+import aboutImg from "../../public/images/about_img_1.jpeg";
+import aboutImg2 from "../../public/images/about_img_2.jpeg";
+import aboutImg3 from "../../public/images/about_img_3.jpeg";
 import aboutImg4 from "../../public/images/about_img_4.jpeg";
-
-const funfaceData = [
-  {
-    title: 'Global Happy Clients',
-    factNumber: '40K',
-  },
-  {
-    title: 'Project Completed',
-    factNumber: '50K',
-  },
-  {
-    title: 'Team Members',
-    factNumber: '245',
-  },
-  {
-    title: 'Digital products',
-    factNumber: '550',
-  },
-];
+import { funfaceData } from "@/constants";
 
 export default function AboutPage() {
   return (
@@ -48,16 +30,20 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="Your trusted partner for business"
-              subtitle="About Our Agency"
+              title="TechShala – Learning Beyond the Classroom!"
+              subtitle="Who We Are?"
             >
               <Spacing lg="30" md="20" />
               <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
+                TechShala, derived from 'Technology' and 'Shala' (meaning
+                school), is a student-led technical committee at Vidyalankar
+                Polytechnic. Our mission is to enhance students' technical
+                proficiency through engaging and enjoyable events. We organize a
+                variety of activities, including workshops, expert lectures, and
+                technical competitions, designed to make the learning process
+                both effective and enjoyable. Our goal is to empower students
+                with practical skills and knowledge, preparing them for
+                successful careers in the ever-evolving technological landscape.
               </p>
               <Spacing lg="30" md="30" />
               <Div className="cs-separator cs-accent_bg"></Div>
@@ -65,11 +51,7 @@ export default function AboutPage() {
             </SectionHeading>
           </Div>
           <Div className="col-lg-5 offset-xl-2">
-            <Image
-              src={aboutImg}
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
+            <Image src={aboutImg} alt="About" className="w-100 cs-radius_15" />
             <Spacing lg="25" md="25" />
           </Div>
           {/* <Div className="col-lg-7">
@@ -97,7 +79,7 @@ export default function AboutPage() {
       <Div className="container">
         <FunFact
           title="Our fun fact"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+          subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
           data={funfaceData}
         />
       </Div>
