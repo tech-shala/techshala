@@ -15,6 +15,8 @@ import Spacing from "@/app/ui/Spacing";
 // import VideoModal from "@/app/ui/VideoModal";
 import Card from "./ui/Card";
 import { funfaceData } from "@/constants";
+import EventSlider from "./ui/Slider/EventSlider";
+import { events } from "@/constants";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -27,54 +29,59 @@ const heroSocialLinks = [
     links: "https://www.facebook.com/Vidyalankar.VP/",
   },
 ];
-// FunFact Data
-// const funfaceData = [
+
+// Portfolio Data
+// const eventData = [
 //   {
-//     title: "Established",
-//     factNumber: "2019",
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_1.jpeg",
 //   },
 //   {
-//     title: "Workshops Conducted",
-//     factNumber: "500+",
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_2.jpeg",
 //   },
 //   {
-//     title: "Volunteers",
-//     factNumber: "50+",
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_0.jpg",
 //   },
 //   {
-//     title: "Participants",
-//     factNumber: "150k+",
+//     title: "Colorful Art Work",
+//     subtitle: "See Details",
+//     href: "/portfolio/portfolio-details",
+//     src: "/images/portfolio_3.jpeg",
 //   },
 // ];
-// Portfolio Data
-const portfolioData = [
-  {
-    title: "Colorful Art Work",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_1.jpeg",
-  },
-  {
-    title: "Colorful Art Work",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_2.jpeg",
-  },
-  {
-    title: "Colorful Art Work",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_0.jpg",
-  },
-  {
-    title: "Colorful Art Work",
-    subtitle: "See Details",
-    href: "/portfolio/portfolio-details",
-    src: "/images/portfolio_3.jpeg",
-  },
-];
 
 export default function Home() {
+  // Process events data
+  const allEvents = Object.values(events).flatMap(domain => Object.values(domain));
+
+  const currentDate = new Date();
+  currentDate.setHours(0, 0, 0, 0); // Normalize to midnight for accurate comparison
+
+  const filteredEvents = allEvents.filter(event => {
+    const [day, month, year] = event.date.split('-');
+    const eventDate = new Date(`${year}-${month}-${day}`);
+    eventDate.setHours(0, 0, 0, 0);
+    return eventDate >= currentDate;
+  });
+
+  filteredEvents.sort((a, b) => {
+    const [aDay, aMonth, aYear] = a.date.split('-');
+    const aDate = new Date(`${aYear}-${aMonth}-${aDay}`);
+    const [bDay, bMonth, bYear] = b.date.split('-');
+    const bDate = new Date(`${bYear}-${bMonth}-${bDay}`);
+    return aDate - bDate;
+  });
+
+  const latestEvents = filteredEvents.slice(0, 10);
+
   return (
     <>
       {/* Start Hero Section */}
@@ -195,7 +202,7 @@ export default function Home() {
           />
           <Spacing lg="90" md="45" />
         </Div>
-        <PortfolioSlider data={portfolioData} />
+        <EventSlider data={latestEvents} />
       </Div>
       {/* End Portfolio Section */}
 
@@ -298,7 +305,7 @@ export default function Home() {
       {/* Start CTA Section */}
       <Div className="container">
         <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
+          title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"

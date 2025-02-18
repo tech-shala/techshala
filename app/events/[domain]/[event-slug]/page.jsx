@@ -6,15 +6,15 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
 import Image from "next/image";
-import imgUrl from "../../../public/images/portfolio_details_1.jpeg";
+import imgUrl from "../../../../public/images/portfolio_details_1.jpeg";
 
 export default function PortfolioDetailsPage() {
   return (
     <>
       <PageHeading
-        title="Event Details"
+        title="Portfolio Details"
         bgSrc="/images/service_hero_bg.jpeg"
-        pageLinkText="EVENT-DETAILS"
+        pageLinkText="PORTFOLIO-DETAILS"
       />
       <Spacing lg="150" md="80" />
       <Div className="container">

@@ -8,12 +8,17 @@ import Portfolio from "@/app/ui/Portfolio";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { events } from "@/constants";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
-// Process events data
-const flattenEvents = Object.values(events)
-  .flatMap((domainEvents) =>
-    Object.values(domainEvents).map((event) => {
+export default function DomainEventsPage() {
+  const [itemShow, setItemShow] = useState(7);
+  const router = useRouter();
+  const { domain } = useParams();
+
+  // Get events for current domain and process them
+  const domainEvents = events[domain] ? Object.values(events[domain]) : [];
+  const processedEvents = domainEvents
+    .map((event) => {
       const [day, month, year] = event.date.split("-");
       const eventDate = new Date(`${year}-${month}-${day}`);
       const today = new Date();
@@ -22,48 +27,40 @@ const flattenEvents = Object.values(events)
       if (eventDate < today) status = "past";
       else if (eventDate.toDateString() === today.toDateString())
         status = "current";
-      console.log(
-        "DATESTRING",
-        eventDate.toDateString(),
-        today.toDateString(),
-        eventDate,
-        today,
-        status
-      );
+
       return { ...event, status };
     })
-  )
-  .sort((a, b) => new Date(a.date) - new Date(b.date));
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
 
-const categoryMenu = Object.keys(events).map((domain) => ({
-  title: domain.charAt(0).toUpperCase() + domain.slice(1),
-  category: domain,
-}));
-
-console.log("Processed Events:", flattenEvents);
-
-export default function EventsPage() {
-  const [itemShow, setItemShow] = useState(7);
-  const router = useRouter();
+  const categoryMenu = Object.keys(events).map((domain) => ({
+    title: domain.charAt(0).toUpperCase() + domain.slice(1),
+    category: domain,
+  }));
 
   return (
     <>
       <PageHeading
-        title="Events"
+        title={`${domain.charAt(0).toUpperCase() + domain.slice(1)} Events`}
         bgSrc="/images/team_hero_bg.jpeg"
         pageLinkText="Events"
       />
       <Spacing lg="145" md="80" />
       <Div className="container">
         <Div className="cs-portfolio_1_heading">
-          <SectionHeading title="All Events" subtitle="Our Events" />
+          <SectionHeading
+            title={`${domain.charAt(0).toUpperCase() + domain.slice(1)} Events`}
+            subtitle="Our Events"
+          />
           <Div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
-              <li className="active">
+              <li>
                 <span onClick={() => router.push("/events")}>All</span>
               </li>
               {categoryMenu.map((item, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  className={item.category === domain ? "active" : ""}
+                >
                   <span onClick={() => router.push(`/events/${item.category}`)}>
                     {item.title}
                   </span>
@@ -74,7 +71,7 @@ export default function EventsPage() {
         </Div>
         <Spacing lg="90" md="45" />
         <Div className="row">
-          {flattenEvents.slice(0, itemShow).map((event, index) => (
+          {processedEvents.slice(0, itemShow).map((event, index) => (
             <Div className="col-lg-4" key={index}>
               <Portfolio
                 title={event.title}
@@ -89,7 +86,7 @@ export default function EventsPage() {
         </Div>
 
         <Div className="text-center">
-          {flattenEvents.length <= itemShow ? (
+          {processedEvents.length <= itemShow ? (
             ""
           ) : (
             <>
