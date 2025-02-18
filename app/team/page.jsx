@@ -6,133 +6,8 @@ import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
 import Team from "@/app/ui/Team";
 import FlowingMenu from "../ui/FlowingMenu";
+import { CoreTeam, domainHeads, facultyTeam } from "@/constants";
 
-const facultyTeam = [
-  {
-    memberImage: "/images/member_1.jpeg",
-    memberName: "Melon Bulgery",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_3.jpeg",
-    memberName: "David Elone",
-    memberDesignation: "React Developer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-];
-const CoreTeam = [
-  {
-    memberImage: "/images/member_1.jpeg",
-    memberName: "Melon Bulgery",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_3.jpeg",
-    memberName: "David Elone",
-    memberDesignation: "React Developer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-];
-const demoItems = [
-  {
-    link: "#",
-    text: "Mojave",
-    domain: "App Domain Head",
-    image: "/images/coding-person.png",
-  },
-
-  {
-    link: "#",
-    text: "Sonoma",
-    domain: "App Domain Head",
-
-    image: "/images/coding-person.png",
-  },
-
-  {
-    link: "#",
-    text: "Monterey",
-    domain: "Web Domain Head",
-
-    image: "https://picsum.photos/600/400?random=3",
-  },
-
-  {
-    link: "#",
-    text: "Sequoia",
-    domain: "Web Domain Head",
-
-    image: "https://picsum.photos/600/400?random=4",
-  },
-];
 export default function TeamPage() {
   return (
     <>
@@ -210,7 +85,7 @@ export default function TeamPage() {
       />
       <Spacing lg="70" md="50" />
       <Div>
-        <FlowingMenu items={demoItems} />
+        <FlowingMenu items={domainHeads} />
       </Div>
     </>
   );

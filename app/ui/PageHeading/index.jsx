@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from "next/link";;
-import Div from '../Div';
+import React from "react";
+import Link from "next/link";
+import Div from "../Div";
 
 export default function PageHeading({ title, bgSrc, pageLinkText }) {
   return (
