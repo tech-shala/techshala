@@ -370,7 +370,12 @@ hr {
 
 .cs-form_field option:hover {
   background-color: #0ba723;
+  
 }
+.cs-form_field option:active {
+  background-color: #0ba723;
+}
+
 .cs-form_field {
   display: block;
   width: 100%;

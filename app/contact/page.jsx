@@ -6,10 +6,49 @@ import Spacing from "@/app/ui/Spacing";
 import ContactInfoWidget from "@/app/ui/Widget/ContactInfoWidget";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [enquiryType, setEnquiryType] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendMessage = (e) => {
+    e.preventDefault();
+    const id = toast.loading("Sending message...");
+    console.log("Sending message");
+    console.log("Name: ", name);
+    console.log("Email: ", email);
+    console.log("Mobile: ", mobile);
+    console.log("Enquiry Type: ", enquiryType);
+    console.log("Message: ", message);
+    if (email == "" || name == "" || mobile == "") {
+      alert("Please fill all the fields");
+      return;
+    }
+    fetch("/api/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        mobile,
+        enquiryType,
+        message,
+      }),
+    }).then(() => {
+      toast.success("Enquiry Sent Successfully", { id });
+      setName("");
+      setEmail("");
+      setMobile("");
+      setEnquiryType("");
+      setMessage("");
+    });
+  };
   return (
     <>
       <PageHeading
@@ -33,12 +72,24 @@ export default function ContactPage() {
             <form action="#" className="row">
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Full Name*</label>
-                <input type="text" className="cs-form_field" />
+                <input
+                  type="text"
+                  className="cs-form_field"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Email*</label>
-                <input type="text" className="cs-form_field" />
+                <input
+                  type="email"
+                  className="cs-form_field"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
                 <Spacing lg="20" md="20" />
               </Div>
               {/* <Div className="col-sm-6">
@@ -48,13 +99,24 @@ export default function ContactPage() {
               </Div> */}
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Mobile*</label>
-                <input type="text" className="cs-form_field" required />
+                <input
+                  type="text"
+                  className="cs-form_field"
+                  value={mobile}
+                  onChange={(e) => setMobile(e.target.value)}
+                  required
+                />
                 <Spacing lg="20" md="20" />
               </Div>
               <Div className="col-sm-6">
-                <label className="cs-primary_color">Mobile*</label>
+                <label className="cs-primary_color">Enquiry Type</label>
                 {/* write dropdown with 2 options */}
-                <select className="cs-form_field">
+                <select
+                  className="cs-form_field"
+                  value={enquiryType}
+                  onChange={(e) => setEnquiryType(e.target.value)}
+                  required
+                >
                   <option>Select</option>
                   <option value="general-enquiry">General Enquiry</option>
                   <option value="Event-collaboration">
@@ -72,11 +134,13 @@ export default function ContactPage() {
                   cols="30"
                   rows="7"
                   className="cs-form_field"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <Spacing lg="25" md="25" />
               </Div>
               <Div className="col-sm-12">
-                <button className="cs-btn cs-style1">
+                <button className="cs-btn cs-style1" onClick={sendMessage}>
                   <span>Send Message</span>
                   <Icon icon="bi:arrow-right" />
                 </button>

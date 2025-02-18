@@ -1,27 +1,28 @@
-'use client';
-import { useEffect } from 'react';
-import Header from '@/app/ui/Header';
-import CustomCursor from '@/app/ui/CustomCursor';
-import Footer from '@/app/ui/Footer';
+"use client";
+import { useEffect } from "react";
+import Header from "@/app/ui/Header";
+import CustomCursor from "@/app/ui/CustomCursor";
+import Footer from "@/app/ui/Footer";
 // import Lenis from '@studio-freight/lenis';
-import Lenis from 'lenis'
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './scss/index.scss';
-import { Poppins, Open_Sans } from 'next/font/google';
-import gsap from 'gsap';
-import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import SplashCursor from './ui/SplashCursor';
+import Lenis from "lenis";
+import "swiper/css";
+import "swiper/css/pagination";
+import "./scss/index.scss";
+import { Poppins, Open_Sans } from "next/font/google";
+import gsap from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+import SplashCursor from "./ui/SplashCursor";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--primary-font',
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--primary-font",
 });
 const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--secondary-font',
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--secondary-font",
 });
 
 // export const metadata = {
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
     const lenis = new Lenis({
       lerp: 0.1,
       smoothWheel: true,
-      gestureOrientation: 'both',
+      gestureOrientation: "both",
     });
 
     const raf = (time) => {
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
         <title>Arino Creative Agency Next JS Template</title>
       </head>
       <body className={`${openSans.variable} ${poppins.variable}`}>
+        <Toaster position="bottom-right" />
         <Header />
         {/* <CustomCursor /> */}
         <SplashCursor />
