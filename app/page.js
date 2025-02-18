@@ -291,7 +291,7 @@ export default function Home() {
 
       {/* Start MovingText Section */}
       <Spacing lg="125" md="70" />
-      <MovingText text="Our reputed world wide partners" />
+      <MovingText text="| A Technical Committee from VP |" />
       <Spacing lg="105" md="70" />
       {/* End MovingText Section */}
 
@@ -303,14 +303,14 @@ export default function Home() {
       {/* End LogoList Section */}
 
       {/* Start CTA Section */}
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
-          title="Let's disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
+          title="Let's discuss, make <br />something <i>cool</i> together"
+          btnText="Collaborate with Us"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
-      </Div>
+      </Div> */}
       {/* End CTA Section */}
     </>
   );

@@ -6,7 +6,7 @@ import SectionHeading from "@/app/ui/SectionHeading";
 import Spacing from "@/app/ui/Spacing";
 import MasonryGallery from "@/app/ui/Gallery/MasonryGallery";
 
-export default function TeamPage() {
+export default function GalleryPage() {
   return (
     <>
       <PageHeading
@@ -17,14 +17,14 @@ export default function TeamPage() {
       <Spacing lg="145" md="80" />
       <MasonryGallery />
       <Spacing lg="70" md="50" />
-      <Div className="container">
+      {/* <Div className="container">
         <Cta
           title="Let's disscuse make <br />something <i>cool</i> together"
           btnText="Apply For Meeting"
           btnLink="/contact"
           bgSrc="/images/cta_bg.jpeg"
         />
-      </Div>
+      </Div> */}
     </>
   );
 }

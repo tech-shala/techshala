@@ -211,7 +211,7 @@ hr {
     display: inline-block;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       height: 2px;
       width: 100%;
@@ -221,7 +221,9 @@ hr {
       transform: scaleX(0);
       transform-origin: 0 50%;
       transition-property: transform;
-      transition-property: transform, -webkit-transform;
+      transition-property:
+        transform,
+        -webkit-transform;
       transition-duration: 0.6s;
       transition-timing-function: ease-out;
     }
@@ -282,7 +284,7 @@ hr {
   color: #fff;
   cursor: pointer;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -331,7 +333,7 @@ hr {
       margin-right: 21px;
       padding-right: 21px;
       &::after {
-        content: '';
+        content: "";
         height: 22px;
         width: 2px;
         background-color: #fff;
@@ -370,7 +372,6 @@ hr {
 
 .cs-form_field option:hover {
   background-color: #0ba723;
-  
 }
 .cs-form_field option:active {
   background-color: #0ba723;
@@ -425,7 +426,7 @@ label {
       margin-right: 12px;
       padding-right: 12px;
       &::before {
-        content: '';
+        content: "";
         height: 20px;
         width: 2px;
         border-radius: 2px;
@@ -509,7 +510,7 @@ label {
   line-height: 2.8em;
 }
 .cs-parallax {
-  > *:not([class*='cs-shape_']) {
+  > *:not([class*="cs-shape_"]) {
     position: relative;
     z-index: 5;
   }
@@ -600,7 +601,7 @@ label {
 .cs-video_block_1_wrap {
   position: relative;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 50%;
     width: 100%;
@@ -618,7 +619,7 @@ label {
   overflow: hidden;
   border-radius: 20px;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
@@ -656,7 +657,7 @@ label {
 
 .cs-player_btn:before,
 .cs-player_btn:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -704,8 +705,8 @@ label {
   background-attachment: fixed;
 }
 
-.cs-parallax [class*='cs-to_'],
-.cs-parallax_bg [class*='cs-to_'] {
+.cs-parallax [class*="cs-to_"],
+.cs-parallax_bg [class*="cs-to_"] {
   transition: all 0.6s ease;
 }
 
@@ -978,7 +979,7 @@ label {
   padding: 120px 0 50px;
   position: relative;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     right: -30px;
     top: -30px;
@@ -1013,7 +1014,7 @@ label {
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  content: '';
+  content: "";
   height: 17px;
   width: 1px;
   background-color: $white;
@@ -1034,7 +1035,7 @@ label {
     position: relative;
     border-radius: 15px;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
       width: 100%;
@@ -1110,7 +1111,11 @@ label {
     display: block;
     border: none;
     width: 100%;
-    filter: grayscale(100%) invert(90%) contrast(120%);
+    filter: grayscale(80%) invert(90%) contrast(120%);
+    transition: filter 400ms ease-in-out;
+    &:hover {
+      filter: grayscale(0%) invert(0%) contrast(100%);
+    }
   }
   &.cs-type1 {
     height: 100%;
@@ -1131,7 +1136,7 @@ label {
   position: relative;
   overflow: hidden;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -80%;
@@ -1284,7 +1289,9 @@ label {
 }
 
 .cs-parallax_slider {
-  transition: opacity 0.6s ease, transform 0.3s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.3s ease;
   &.loading {
     opacity: 0;
     visibility: hidden;
@@ -1316,7 +1323,7 @@ label {
     cursor: pointer;
     transition: all 0.3s ease;
     &::before {
-      content: '';
+      content: "";
       height: 9px;
       width: 9px;
       position: absolute;
