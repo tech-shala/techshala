@@ -30,7 +30,7 @@ export default function AboutPage() {
         <Div className="row">
           <Div className="col-xl-5 col-lg-7">
             <SectionHeading
-              title="TechShala – Learning Beyond the Classroom!"
+              title="TechShala - Learn Beyond Classroom!"
               subtitle="Who We Are?"
             >
               <Spacing lg="30" md="20" />
@@ -77,8 +77,13 @@ export default function AboutPage() {
 
       {/* Start Fun Fact Section */}
       <Div className="container">
-        <FunFact
+        {/* <FunFact
           title="Our fun fact"
+          subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
+          data={funfaceData}
+        /> */}
+        <FunFact
+          title="Some Stats."
           subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
           data={funfaceData}
         />

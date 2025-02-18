@@ -101,7 +101,7 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="Our fun fact"
+          title="Some Stats."
           subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
           data={funfaceData}
         />
@@ -129,7 +129,7 @@ export default function Home() {
                   <Card
                     title="App Devlopment"
                     link="/events/app"
-                    src="/images/service_1.jpeg"
+                    src="/images/domains/app.png"
                     alt="App Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -139,7 +139,7 @@ export default function Home() {
                   <Card
                     title="Web Development"
                     link="/events/web"
-                    src="/images/service_2.jpeg"
+                    src="/images/domains/web.png"
                     alt="Web Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -148,7 +148,7 @@ export default function Home() {
                   <Card
                     title="Blockchain Development"
                     link="/events/blockchain"
-                    src="/images/service_3.jpeg"
+                    src="/images/domains/blockchain.png"
                     alt="Blockchain Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -158,7 +158,7 @@ export default function Home() {
                   <Card
                     title="Cyber Security"
                     link="/events/cybersecurity"
-                    src="/images/service_4.jpeg"
+                    src="/images/domains/cybersecurity.png"
                     alt="Cyber Security Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -169,7 +169,7 @@ export default function Home() {
                   <Card
                     title="AI / ML Development"
                     link="/events/aiml"
-                    src="/images/service_1.jpeg"
+                    src="/images/domains/aiml.png"
                     alt="AI / ML Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -179,7 +179,7 @@ export default function Home() {
                   <Card
                     title="IoT Development"
                     link="/events/iot"
-                    src="/images/service_2.jpeg"
+                    src="/images/domains/iot.png"
                     alt="IoT Domain"
                   />
                   <Spacing lg="0" md="30" />
@@ -196,8 +196,8 @@ export default function Home() {
       <Div>
         <Div className="container">
           <SectionHeading
-            title="Portfolio to explore"
-            subtitle="Latest Projects"
+            title="Upcoming Events"
+            subtitle="Our Events"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
