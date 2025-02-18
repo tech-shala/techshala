@@ -29,6 +29,7 @@ export const events = {
       venue: "Lab 003",
       fromTime: "05:00 PM",
       toTime: "07:00 PM",
+      duration: 2,
       registrationDeadline: "16-02-2025",
       registrationLink: "https://forms.gle/1234567890",
       instructors: [
@@ -52,6 +53,9 @@ export const events = {
       venue: "Lab 003",
       fromTime: "10:00 AM",
       toTime: "11:00 AM",
+      duration: 2,
+      registrationDeadline: "26-02-2025",
+      registrationLink: "https://forms.gle/1234567890",
       instructors: [
         {
           name: "Aryan Shinde",
@@ -71,6 +75,9 @@ export const events = {
       venue: "Lab 004",
       fromTime: "10:00 AM",
       toTime: "11:00 AM",
+      duration: 2,
+      registrationDeadline: "22-02-2025",
+      registrationLink: "https://forms.gle/1234567890",
       instructors: [
         {
           name: "Yash Nimse",
@@ -90,6 +97,9 @@ export const events = {
       venue: "Lab 001",
       fromTime: "03:00 PM",
       toTime: "05:00 PM",
+      duration: 2,
+      registrationDeadline: "02-03-2025",
+      registrationLink: "https://forms.gle/1234567890",
       instructors: [
         {
           name: "Shreyash",
