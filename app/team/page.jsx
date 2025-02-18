@@ -108,10 +108,21 @@ export default function TeamPage() {
       <Spacing lg="145" md="80" />
       <Div className="container">
         <SectionHeading
-          title="Meet our awesome <br/>team members"
+          title="Meet our awesome <br/>tech team members"
           subtitle="Our Team"
           variant="cs-style1 text-center"
         />
+        <Spacing lg="90" md="45" />
+        <Div className="row">
+          <Div className="col-lg-3 col-sm-6 mx-auto">
+            <Team
+              memberImage={teamData[2].memberImage}
+              memberName="Anjum Munjawar"
+              memberDesignation="CTO"
+              memberSocial="/"
+            />
+          </Div>
+        </Div>
         <Spacing lg="90" md="45" />
         <Div className="row">
           {teamData.map((item, index) => (
