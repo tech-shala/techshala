@@ -1,7 +1,7 @@
-import React from 'react';
-import { Icon } from '@iconify/react';
-import Link from 'next/link';
-import Div from '../Div';
+import React from "react";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+import Div from "../Div";
 
 export default function Team({
   memberImage,
