@@ -128,7 +128,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="App Devlopment"
-                    link="/events?domain=app"
+                    link="/events/app"
                     src="/images/service_1.jpeg"
                     alt="App Domain"
                   />
@@ -138,7 +138,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="Web Development"
-                    link="/events?domain=web"
+                    link="/events/web"
                     src="/images/service_2.jpeg"
                     alt="Web Domain"
                   />
@@ -147,7 +147,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="Blockchain Development"
-                    link="/events?domain=blockchain"
+                    link="/events/blockchain"
                     src="/images/service_3.jpeg"
                     alt="Blockchain Domain"
                   />
@@ -157,7 +157,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="Cyber Security"
-                    link="/events?domain=cybersecurity"
+                    link="/events/cybersecurity"
                     src="/images/service_4.jpeg"
                     alt="Cyber Security Domain"
                   />
@@ -168,7 +168,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="AI / ML Development"
-                    link="/events?domain=aiml"
+                    link="/events/aiml"
                     src="/images/service_1.jpeg"
                     alt="AI / ML Domain"
                   />
@@ -178,7 +178,7 @@ export default function Home() {
                 <Div className="col-lg-3 col-sm-6">
                   <Card
                     title="IoT Development"
-                    link="/events?domain=iot"
+                    link="/events/iot"
                     src="/images/service_2.jpeg"
                     alt="IoT Domain"
                   />
