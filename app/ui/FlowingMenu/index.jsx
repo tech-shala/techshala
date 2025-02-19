@@ -20,7 +20,7 @@ function MenuItem({ link, text, domain, image }) {
   const marqueeRef = React.useRef(null);
   const marqueeInnerRef = React.useRef(null);
 
-  const animationDefaults = { duration: 0.6, ease: "expo" };
+  const animationDefaults = { duration: 1, ease: "expo" };
 
   const findClosestEdge = (mouseX, mouseY, width, height) => {
     const topEdgeDist = distMetric(mouseX, mouseY, width / 2, 0);
@@ -63,7 +63,7 @@ function MenuItem({ link, text, domain, image }) {
       .to(marqueeInnerRef.current, { y: edge === "top" ? "101%" : "-101%" }, 0);
   };
 
-  const repeatedMarqueeContent = Array.from({ length: 7 }).map((_, idx) => (
+  const repeatedMarqueeContent = Array.from({ length: 6 }).map((_, idx) => (
     <React.Fragment key={idx}>
       <span>{domain}</span>
       <div

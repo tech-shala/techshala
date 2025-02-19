@@ -185,126 +185,206 @@ export const projects = [
 export const facultyTeam = [
   {
     memberImage: "/images/member_1.jpeg",
-    memberName: "Melon Bulgery",
-    memberDesignation: "Product Designer",
+    memberName: "Prasad Koyande",
+    memberDesignation: "CO Techshala Faculty Head",
     memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
+      linkedin: "https://www.linkedin.com/in/prasad-koyande-b6b003145/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
     },
   },
   {
     memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
+    memberName: "Kirthi Gupta",
+    memberDesignation: "EJ Techshala Faculty Head",
     memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
+      linkedin: "https://www.linkedin.com/in/kirthi-gupta-199786191/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
     },
   },
   {
     memberImage: "/images/member_3.jpeg",
-    memberName: "David Elone",
-    memberDesignation: "React Developer",
+    memberName: "Gauri Bobade",
+    memberDesignation: "IF Techshala Faculty Head",
     memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
+      linkedin: "https://www.linkedin.com/in/gauri-bobade-90723b2aa/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
     },
   },
 ];
-export const CoreTeam = [
-  {
-    memberImage: "/images/member_1.jpeg",
-    memberName: "Melon Bulgery",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
-  {
-    memberImage: "/images/member_3.jpeg",
-    memberName: "David Elone",
-    memberDesignation: "React Developer",
-    memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
-    },
-  },
 
+export const COCoreTeam = [
   {
-    memberImage: "/images/member_2.jpeg",
-    memberName: "Olinaz Fushi",
-    memberDesignation: "Product Designer",
+    // memberImage: "/images/member_1.jpeg",
+    memberName: "Kunal Patil",
+    memberDesignation: "CO Dept Tech Head",
     memberSocial: {
-      linkedin: "/",
-      twitter: "/",
-      youtube: "/",
-      facebook: "/",
+      linkedin: "https://www.linkedin.com/in/kunal-nitin-patil",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_2.jpeg",
+    memberName: "Huzan Shroff",
+    memberDesignation: "CO Dept Tech Head",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/huzan-shroff-92618726a",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Aditya Darekar",
+    memberDesignation: "CO Dept SPOC",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/aditya-darekar-678b3b204",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Sumera Bijle",
+    memberDesignation: "CO Dept SPOC",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/sumera-bijle-a58710270",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
     },
   },
 ];
+
+export const EJCoreTeam = [
+  {
+    // memberImage: "/images/member_1.jpeg",
+    memberName: "Manish Chaupal",
+    memberDesignation: "CO Dept Tech Head",
+    memberSocial: {
+      linkedin: "http://www.linkedin.com/in/manish-chaupal-a3211b293",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_2.jpeg",
+    memberName: "Janhavi Gangan",
+    memberDesignation: "CO Dept Tech Head",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/janhavi-gangan-3446b7271",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Manasvi Rane",
+    memberDesignation: "EJ Dept SPOC",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/manasvi-rane-583a04269",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Riya S",
+    memberDesignation: "EJ Dept SPOC",
+    memberSocial: {
+      linkedin: "http://www.linkedin.com/in/riya-s-7a5855351",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+];
+
+export const IFCoreTeam = [
+  {
+    // memberImage: "/images/member_1.jpeg",
+    memberName: "Seher Siddiqui",
+    memberDesignation: "IF Dept Tech Head",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/seher-siddiqui-76041b234/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_2.jpeg",
+    memberName: "Pranav Sawant",
+    memberDesignation: "IF Dept Tech Head",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/pranav-sawant-8b741824a",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Deep Patil",
+    memberDesignation: "IF Dept SPOC",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/deep-p-7451632a1/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+  {
+    // memberImage: "/images/member_3.jpeg",
+    memberName: "Swara Khandekar",
+    memberDesignation: "IF Dept SPOC",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/swara-khandekar-b65a04351/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
+  },
+];
+
 export const domainHeads = [
   {
     link: "#",
-    text: "Mojave",
-    domain: "App Domain Head",
-    image: "/images/coding-person.png",
+    text: "Web Development Domain",
+    domain: "Aryan Shinde | Aryan Remje",
+    image: "https://picsum.photos/600/400?random=1",
   },
 
   {
     link: "#",
-    text: "Sonoma",
-    domain: "App Domain Head",
-
-    image: "/images/coding-person.png",
+    text: "App Development Domain",
+    domain: "Yash Nimse | Arnel Roy",
+    image: "https://picsum.photos/600/400?random=2",
   },
 
   {
     link: "#",
-    text: "Monterey",
-    domain: "Web Domain Head",
-
+    text: "Blockchain Domain",
+    domain: "Shreyash",
     image: "https://picsum.photos/600/400?random=3",
   },
 
   {
     link: "#",
-    text: "Sequoia",
-    domain: "Web Domain Head",
-
+    text: "Cyber Security Domain",
+    domain: "Mohit Chaudhari | Ved Bharadwaj | Aaryan Bhabhe",
     image: "https://picsum.photos/600/400?random=4",
   },
 ];
