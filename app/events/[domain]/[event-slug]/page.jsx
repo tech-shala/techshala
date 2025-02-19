@@ -147,11 +147,11 @@ export default function EventDetailsPage() {
 
       <Spacing lg="145" md="80" />
 
-      <Cta
+      {/* <Cta
         title="Join us for an amazing event!"
         bgSrc="/images/cta_bg_2.jpeg"
         variant="rounded-0"
-      />
+      /> */}
     </>
   );
 }
