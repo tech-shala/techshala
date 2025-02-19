@@ -181,6 +181,14 @@ export default function Header({ variant }) {
                         Gallery
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/contact"
+                        onClick={() => setMobileToggle(false)}
+                      >
+                        Contact
+                      </Link>
+                    </li>
                     {/* <li className="menu-item-has-children">
                       <Link
                         href="/service"

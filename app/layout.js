@@ -53,9 +53,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="author" content="Laralink" />
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
-        <title>Arino Creative Agency Next JS Template</title>
+        <title>Techshala | VP | Technical Committee</title>
+        {/* Add the SEO for the website */}
+        <meta
+          name="description"
+          content="Techshala is a technical committee of Vidyalankar Polytechnic College, Mumbai. It is a platform for students to learn and grow in the field of technology."
+        />
+        <meta
+          name="keywords"
+          content="Techshala, Vidyalankar Polytechnic College, Technical Committee, Students, Technology, Learning, Growth"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Techshala | VP | Technical Committee" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-video-preview:large"
+        />
       </head>
       <body className={`${openSans.variable} ${poppins.variable}`}>
         <Toaster position="bottom-right" />
