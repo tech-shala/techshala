@@ -150,3 +150,161 @@ export const events = {
     }
   }
 };
+
+export const projects = [
+  {
+    title: "Richard Gaston",
+    src: "/images/5.jpg",
+  },
+  {
+    title: "KangHee Kim",
+    src: "/images/6.jpg",
+  },
+  {
+    title: "Inka and Niclas",
+    src: "/images/7.jpg",
+  },
+  {
+    title: "Arch McLeish",
+    src: "/images/2.jpg",
+  },
+  {
+    title: "Nadir Bucan",
+    src: "/images/1.jpg",
+  },
+  {
+    title: "Chandler Bondurant",
+    src: "/images/3.jpg",
+  },
+  {
+    title: "Arianna Lago",
+    src: "/images/4.jpg",
+  },
+];
+
+export const facultyTeam = [
+  {
+    memberImage: "/images/member_1.jpeg",
+    memberName: "Melon Bulgery",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
+    memberImage: "/images/member_2.jpeg",
+    memberName: "Olinaz Fushi",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
+    memberImage: "/images/member_3.jpeg",
+    memberName: "David Elone",
+    memberDesignation: "React Developer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+
+  {
+    memberImage: "/images/member_2.jpeg",
+    memberName: "Olinaz Fushi",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+];
+export const CoreTeam = [
+  {
+    memberImage: "/images/member_1.jpeg",
+    memberName: "Melon Bulgery",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
+    memberImage: "/images/member_2.jpeg",
+    memberName: "Olinaz Fushi",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+  {
+    memberImage: "/images/member_3.jpeg",
+    memberName: "David Elone",
+    memberDesignation: "React Developer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+
+  {
+    memberImage: "/images/member_2.jpeg",
+    memberName: "Olinaz Fushi",
+    memberDesignation: "Product Designer",
+    memberSocial: {
+      linkedin: "/",
+      twitter: "/",
+      youtube: "/",
+      facebook: "/",
+    },
+  },
+];
+export const domainHeads = [
+  {
+    link: "#",
+    text: "Mojave",
+    domain: "App Domain Head",
+    image: "/images/coding-person.png",
+  },
+
+  {
+    link: "#",
+    text: "Sonoma",
+    domain: "App Domain Head",
+
+    image: "/images/coding-person.png",
+  },
+
+  {
+    link: "#",
+    text: "Monterey",
+    domain: "Web Domain Head",
+
+    image: "https://picsum.photos/600/400?random=3",
+  },
+
+  {
+    link: "#",
+    text: "Sequoia",
+    domain: "Web Domain Head",
+
+    image: "https://picsum.photos/600/400?random=4",
+  },
+];

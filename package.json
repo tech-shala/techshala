@@ -26,7 +26,8 @@
     "resend": "^4.1.2",
     "sass": "^1.71.1",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.4"
+    "swiper": "^11.2.4",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
