@@ -7,10 +7,7 @@ import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import TeamSlider from "@/app/ui/Slider/TeamSlider";
 import Spacing from "@/app/ui/Spacing";
-import aboutImg from "../../public/images/about_img_1.jpeg";
-import aboutImg2 from "../../public/images/about_img_2.jpeg";
-import aboutImg3 from "../../public/images/about_img_3.jpeg";
-import aboutImg4 from "../../public/images/about_img_4.jpeg";
+import aboutImg from "../../public/images/about_image.png";
 import { funfaceData } from "@/constants";
 
 export default function AboutPage() {
@@ -51,7 +48,13 @@ export default function AboutPage() {
             </SectionHeading>
           </Div>
           <Div className="col-lg-5 offset-xl-2">
-            <Image src={aboutImg} alt="About" className="w-100 cs-radius_15" />
+            <Image
+              src={aboutImg}
+              alt="About"
+              className="w-100 cs-radius_15"
+              width={600}
+              height={600}
+            />
             <Spacing lg="25" md="25" />
           </Div>
           {/* <Div className="col-lg-7">
