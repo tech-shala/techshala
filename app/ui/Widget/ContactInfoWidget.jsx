@@ -15,19 +15,32 @@ export default function ContactInfoWidget({ withIcon, title }) {
           ) : (
             ""
           )}
-          +44 454 7800 112
+          <a href="tel:+919987263652">(CO) Er. Prasad Koyande - 9987263652</a>
         </li>
         <li>
           {withIcon ? (
             <span className="cs-accent_color">
-              <Icon icon="mdi:envelope" />
+              <Icon icon="material-symbols:add-call-rounded" />
+            </span>
+          ) : (
+            ""
+          )}{" "}
+          <a href="tel:+918097024500">(IF) Er. Gauri Bobade - 8097024500</a>
+        </li>
+        <li>
+          {withIcon ? (
+            <span className="cs-accent_color">
+              <Icon icon="material-symbols:add-call-rounded" />
             </span>
           ) : (
             ""
           )}
-          demo@vpt.edu.in
+          <a href="tel:+919769621612">(EJ) Er. Kirthi Gupta - 9769621612</a>
         </li>
-        <Link href="https://maps.app.goo.gl/E4SonSTQba43cmZm6">
+        <Link
+          href="https://maps.app.goo.gl/E4SonSTQba43cmZm6"
+          target="_blank  "
+        >
           <li>
             {withIcon ? (
               <span className="cs-accent_color">

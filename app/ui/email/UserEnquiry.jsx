@@ -18,7 +18,7 @@ export const UserEnquiry = ({ name, email, mobile, enquiryType, message }) => {
   return (
     <Html>
       <Head />
-      <Preview>User Enquiry | TechShala</Preview>
+      <Preview>Enquiry | TechShala</Preview>
       <Body style={main}>
         <Container>
           <Section style={content}>
@@ -31,8 +31,7 @@ export const UserEnquiry = ({ name, email, mobile, enquiryType, message }) => {
                     textAlign: "center",
                   }}
                 >
-                  Hello yashnimse92@gmail.com, You got a new enquiry from{" "}
-                  {email}!
+                  Hello Admin, You got a new enquiry from {name}!
                 </Heading>
                 <Heading
                   as="h2"
@@ -83,7 +82,7 @@ export const UserEnquiry = ({ name, email, mobile, enquiryType, message }) => {
               color: "rgb(0,0,0, 0.7)",
             }}
           >
-            © {new Date().getFullYear()} | EVE Manager | Volunteer Invitation |
+            © {new Date().getFullYear()} | TechShala | VP
           </Text>
         </Container>
       </Body>

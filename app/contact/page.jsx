@@ -14,18 +14,21 @@ export default function ContactPage() {
   const [mobile, setMobile] = useState("");
   const [enquiryType, setEnquiryType] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendMessage = (e) => {
     e.preventDefault();
     const id = toast.loading("Sending message...");
+    setIsSubmitting(true);
     console.log("Sending message");
     console.log("Name: ", name);
     console.log("Email: ", email);
     console.log("Mobile: ", mobile);
     console.log("Enquiry Type: ", enquiryType);
     console.log("Message: ", message);
-    if (email == "" || name == "" || mobile == "") {
-      alert("Please fill all the fields");
+    if (email == "" || name == "" || mobile == "" || message == "") {
+      toast.error("Please fill all the fields.", { id });
+      setIsSubmitting(false);
       return;
     }
     fetch("/api/email", {
@@ -42,6 +45,7 @@ export default function ContactPage() {
       }),
     }).then(() => {
       toast.success("Enquiry Sent Successfully", { id });
+      setIsSubmitting(false);
       setName("");
       setEmail("");
       setMobile("");
@@ -69,7 +73,7 @@ export default function ContactPage() {
             <Spacing lg="0" md="50" />
           </Div>
           <Div className="col-lg-6">
-            <form action="#" className="row">
+            <form onSubmit={sendMessage} className="row">
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Full Name*</label>
                 <input
@@ -92,11 +96,6 @@ export default function ContactPage() {
                 />
                 <Spacing lg="20" md="20" />
               </Div>
-              {/* <Div className="col-sm-6">
-                <label className="cs-primary_color">Project Type*</label>
-                <input type="text" className="cs-form_field" />
-                <Spacing lg="20" md="20" />
-              </Div> */}
               <Div className="col-sm-6">
                 <label className="cs-primary_color">Mobile*</label>
                 <input
@@ -140,9 +139,13 @@ export default function ContactPage() {
                 <Spacing lg="25" md="25" />
               </Div>
               <Div className="col-sm-12">
-                <button className="cs-btn cs-style1" onClick={sendMessage}>
-                  <span>Send Message</span>
-                  <Icon icon="bi:arrow-right" />
+                <button
+                  className="cs-btn cs-style1"
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
+                  {!isSubmitting && <Icon icon="bi:arrow-right" />}
                 </button>
               </Div>
             </form>
