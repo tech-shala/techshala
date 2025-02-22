@@ -14,6 +14,7 @@ export default function EventSlider({ data }) {
     speed: 500,
     dots: true,
     arrows: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 768,

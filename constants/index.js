@@ -151,36 +151,19 @@ export const events = {
   }
 };
 
-export const projects = [
+export const cto = [
   {
-    title: "Richard Gaston",
-    src: "/images/5.jpg",
+    memberImage: "/images/member_1.jpeg",
+    memberName: "Anjum Mujawar",
+    memberDesignation: "CTO",
+    memberSocial: {
+      linkedin: "https://www.linkedin.com/in/anjummujawar/",
+      // twitter: "/",
+      // youtube: "/",
+      // facebook: "/",
+    },
   },
-  {
-    title: "KangHee Kim",
-    src: "/images/6.jpg",
-  },
-  {
-    title: "Inka and Niclas",
-    src: "/images/7.jpg",
-  },
-  {
-    title: "Arch McLeish",
-    src: "/images/2.jpg",
-  },
-  {
-    title: "Nadir Bucan",
-    src: "/images/1.jpg",
-  },
-  {
-    title: "Chandler Bondurant",
-    src: "/images/3.jpg",
-  },
-  {
-    title: "Arianna Lago",
-    src: "/images/4.jpg",
-  },
-];
+]
 
 export const facultyTeam = [
   {
@@ -386,5 +369,20 @@ export const domainHeads = [
     text: "Cyber Security Domain",
     domain: "Mohit Chaudhari | Ved Bharadwaj | Aaryan Bhabhe",
     image: "https://picsum.photos/600/400?random=4",
+  },
+];
+
+export const copyrightLinks = [
+  {
+    title: "Team",
+    href: "/team",
+  },
+  {
+    title: "Events",
+    href: "/events",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
   },
 ];

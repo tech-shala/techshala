@@ -1,6 +1,6 @@
-import React from 'react';
-import parse from 'html-react-parser';
-import Div from '../Div';
+import React from "react";
+import parse from "html-react-parser";
+import Div from "../Div";
 
 export default function IconBox({ title, subtitle, icon }) {
   return (

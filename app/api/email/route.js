@@ -8,7 +8,7 @@ export async function POST(request) {
   const { name, email, mobile, enquiryType, message } = await request.json();
   try {
     const { error } = await resend.emails.send({
-      from: "TechShala <contact@aryanshinde.in>", // Changed from array to string
+      from: "TechShala <contact@aryanshinde.in>",
       to: ["yashnimse92@gmail.com", "shindearyan179@gmail.com", "prasad.koyande@vpt.edu.in", "kirti.gupta@vpt.edu.in", "gauri.bobade@vpt.edu.in"],
       subject: "Techshala - New Enquiry on Website",
       react: UserEnquiry({

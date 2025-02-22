@@ -1,9 +1,7 @@
 "use client";
 
-// import { events } from "@/data/events";
 import { useParams } from "next/navigation";
 import Button from "@/app/ui/Button";
-import Cta from "@/app/ui/Cta";
 import Div from "@/app/ui/Div";
 import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
@@ -15,10 +13,10 @@ import { events } from "@/constants";
 const createSlug = (title) => {
   return title
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
-    .trim(); // Remove whitespace from ends
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
 };
 
 export default function EventDetailsPage() {
@@ -146,12 +144,6 @@ export default function EventDetailsPage() {
       </Div>
 
       <Spacing lg="145" md="80" />
-
-      {/* <Cta
-        title="Join us for an amazing event!"
-        bgSrc="/images/cta_bg_2.jpeg"
-        variant="rounded-0"
-      /> */}
     </>
   );
 }

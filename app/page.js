@@ -1,18 +1,12 @@
 "use client";
-import Cta from "@/app/ui/Cta";
+
 import Div from "@/app/ui/Div";
 import FunFact from "@/app/ui/FunFact";
 import Hero from "@/app/ui/Hero";
-import LogoList from "@/app/ui/LogoList";
 import MovingText from "@/app/ui/MovingText";
 import SectionHeading from "@/app/ui/SectionHeading";
-import PortfolioSlider from "@/app/ui/Slider/PortfolioSlider";
-import PostSlider from "@/app/ui/Slider/PostSlider";
 import TeamSlider from "@/app/ui/Slider/TeamSlider";
-import TestimonialSlider from "@/app/ui/Slider/TestimonialSlider";
-import TimelineSlider from "@/app/ui/Slider/TimelineSlider";
 import Spacing from "@/app/ui/Spacing";
-// import VideoModal from "@/app/ui/VideoModal";
 import Card from "./ui/Card";
 import { funfaceData } from "@/constants";
 import EventSlider from "./ui/Slider/EventSlider";
@@ -30,33 +24,6 @@ const heroSocialLinks = [
   },
 ];
 
-// Portfolio Data
-// const eventData = [
-//   {
-//     title: "Colorful Art Work",
-//     subtitle: "See Details",
-//     href: "/portfolio/portfolio-details",
-//     src: "/images/portfolio_1.jpeg",
-//   },
-//   {
-//     title: "Colorful Art Work",
-//     subtitle: "See Details",
-//     href: "/portfolio/portfolio-details",
-//     src: "/images/portfolio_2.jpeg",
-//   },
-//   {
-//     title: "Colorful Art Work",
-//     subtitle: "See Details",
-//     href: "/portfolio/portfolio-details",
-//     src: "/images/portfolio_0.jpg",
-//   },
-//   {
-//     title: "Colorful Art Work",
-//     subtitle: "See Details",
-//     href: "/portfolio/portfolio-details",
-//     src: "/images/portfolio_3.jpeg",
-//   },
-// ];
 
 export default function Home() {
   // Process events data
@@ -90,7 +57,7 @@ export default function Home() {
         subtitle="Techshala, where 'Tech' stands for Technology and 'Shala' means school, aims to make students technically sound through engaging events that make learning enjoyable."
         btnText="Want to Collaborate?"
         btnLink="/contact"
-        scrollDownId="#service"
+        scrollDownId="#domains"
         socialLinksHeading="Follow Us"
         heroSocialLinks={heroSocialLinks}
         bgImageUrl="/images/hero_bg.jpeg"
@@ -101,16 +68,13 @@ export default function Home() {
       <div className="container">
         <FunFact
           variant="cs-type1"
-          title="Some Stats."
-          subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
-          data={funfaceData}
         />
       </div>
       {/* End FunFact Section */}
 
-      {/* Start Service Section */}
+      {/* Start Domains Section */}
       <Spacing lg="150" md="80" />
-      <Div id="service">
+      <Div id="domains">
         <Div className="container">
           <Div className="row">
             <Div className="col-xl-4">
@@ -189,9 +153,9 @@ export default function Home() {
           </Div>
         </Div>
       </Div>
-      {/* End Service Section */}
+      {/* End Domains Section */}
 
-      {/* Start Portfolio Section */}
+      {/* Start Events Section */}
       <Spacing lg="150" md="50" />
       <Div>
         <Div className="container">
@@ -204,46 +168,7 @@ export default function Home() {
         </Div>
         <EventSlider data={latestEvents} />
       </Div>
-      {/* End Portfolio Section */}
-
-      {/* Start Awards Section */}
-      {/* <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_2">
-        <Div className="cs-shape_2">
-          <Div />
-        </Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="We get multiple awards"
-                subtitle="Our Awards"
-                variant="cs-style1"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <TimelineSlider />
-            </Div>
-          </Div>
-        </Div>
-      </Div> */}
-      {/* End Awards Section */}
-
-      {/* Start Video Block Section */}
-      {/* <Spacing lg="130" md="70" />
-      <Div className="container">
-        <h2 className="cs-font_50 cs-m0 text-center cs-line_height_4">
-          Our agile process is ability to adapt and respond to change. Agile
-          organizations view change as an opportunity, not a threat.
-        </h2>
-        <Spacing lg="70" md="70" />
-        <VideoModal
-          videoSrc="https://www.youtube.com/watch?v=VcaAVWtP48A"
-          bgUrl="/images/video_bg.jpeg"
-        />
-      </Div> */}
-      {/* End Video Block Section */}
+      {/* End Events Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />
@@ -256,62 +181,13 @@ export default function Home() {
         <Spacing lg="85" md="45" />
         <TeamSlider />
       </Div>
-      {/* <Spacing lg="150" md="80" /> */}
       {/* End Team Section */}
-
-      {/* Start Testimonial Section */}
-      {/* <TestimonialSlider /> */}
-      {/* End Testimonial Section */}
-
-      {/* Start Blog Section */}
-      {/* <Spacing lg="150" md="80" />
-      <Div className="cs-shape_wrap_4">
-        <Div className="cs-shape_4"></Div>
-        <Div className="cs-shape_4"></Div>
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
-              <SectionHeading
-                title="Explore recent publication"
-                subtitle="Our Blog"
-                btnText="View More Blog"
-                btnLink="/blog"
-              />
-              <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-7 offset-xl-1">
-              <Div className="cs-half_of_full_width">
-                <PostSlider />
-              </Div>
-            </Div>
-          </Div>
-        </Div>
-      </Div> */}
-      {/* End Blog Section */}
 
       {/* Start MovingText Section */}
       <Spacing lg="125" md="70" />
       <MovingText text="| A Technical Committee from VP |" />
       <Spacing lg="105" md="70" />
       {/* End MovingText Section */}
-
-      {/* Start LogoList Section */}
-      {/* <Div className="container">
-        <LogoList />
-      </Div>
-      <Spacing lg="150" md="80" /> */}
-      {/* End LogoList Section */}
-
-      {/* Start CTA Section */}
-      {/* <Div className="container">
-        <Cta
-          title="Let's discuss, make <br />something <i>cool</i> together"
-          btnText="Collaborate with Us"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
-      {/* End CTA Section */}
     </>
   );
 }

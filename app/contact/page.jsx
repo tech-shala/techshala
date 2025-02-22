@@ -158,6 +158,7 @@ export default function ContactPage() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.95556040178!2d72.8699477!3d19.021679799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf48beff6adb%3A0x8b57459cf41f7a2c!2sVidyalankar%20Polytechnic!5e0!3m2!1sen!2sin!4v1739868578983!5m2!1sen!2sin"
           allowFullScreen
           title="Google Map"
+          loading="lazy"
         />
       </Div>
       <Spacing lg="50" md="40" />

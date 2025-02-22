@@ -39,7 +39,6 @@ export default function Hero({
       <VerticalLinks data={heroSocialLinks} title={socialLinksHeading} />
       <button
         onClick={() => gsap.to(window, { scrollTo: { y: scrollDownId } })}
-        // href={scrollDownId}
         className="cs-down_btn"
       >
         .

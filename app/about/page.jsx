@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
-import Cta from "@/app/ui/Cta";
 import Div from "@/app/ui/Div";
 import FunFact from "@/app/ui/FunFact";
 import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
 import TeamSlider from "@/app/ui/Slider/TeamSlider";
 import Spacing from "@/app/ui/Spacing";
-import aboutImg from "../../public/images/about_image.png";
 import { funfaceData } from "@/constants";
 
 export default function AboutPage() {
@@ -49,7 +47,7 @@ export default function AboutPage() {
           </Div>
           <Div className="col-lg-5 offset-xl-2">
             <Image
-              src={aboutImg}
+              src="/images/about_image.png"
               alt="About"
               className="w-100 cs-radius_15"
               width={600}
@@ -57,22 +55,6 @@ export default function AboutPage() {
             />
             <Spacing lg="25" md="25" />
           </Div>
-          {/* <Div className="col-lg-7">
-            <Image
-              src={aboutImg2}
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
-          </Div>
-          <Div className="col-lg-5">
-            <Image
-              src={aboutImg3}
-              alt="About"
-              className="w-100 cs-radius_15"
-            />
-            <Spacing lg="25" md="25" />
-          </Div> */}
         </Div>
       </Div>
       <Spacing lg="75" md="55" />
@@ -80,11 +62,6 @@ export default function AboutPage() {
 
       {/* Start Fun Fact Section */}
       <Div className="container">
-        {/* <FunFact
-          title="Our fun fact"
-          subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
-          data={funfaceData}
-        /> */}
         <FunFact
           title="Some Stats."
           subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
@@ -92,51 +69,6 @@ export default function AboutPage() {
         />
       </Div>
       {/* End Fun Fact Section */}
-
-      {/* Start Why Choose Section */}
-      {/* <Spacing lg="100" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-xl-5 col-lg-6">
-            <Div className="cs-image_layer cs-style1">
-              <Div className="cs-image_layer_in">
-                <Image
-                  src={aboutImg4}
-                  alt="About"
-                  className="w-100 cs-radius_15"
-                />
-              </Div>
-            </Div>
-            <Spacing lg="0" md="40" />
-          </Div>
-          <Div className="col-xl-5 offset-xl-1 col-lg-6">
-            <SectionHeading
-              title="Highly experienced pepole with us"
-              subtitle="Why Choose Us"
-            >
-              <Spacing lg="30" md="20" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining. Through our years of experience, we’ve also learned
-                that while each channel.
-              </p>
-              <Spacing lg="15" md="15" />
-              <p className="cs-m0">
-                This is the main factor that sets us apart from our competition
-                and allows us to deliver a specialist business consultancy
-                service. Our team applies its wide-ranging experience to
-                determining.
-              </p>
-              <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
-              <Spacing lg="25" md="0" />
-            </SectionHeading>
-          </Div>
-        </Div>
-      </Div> */}
-      {/* End Why Choose Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />
@@ -151,17 +83,7 @@ export default function AboutPage() {
       </Div>
       {/* End Team Section */}
 
-      {/* Start CTA Section */}
       <Spacing lg="150" md="80" />
-      {/* <Div className="container">
-        <Cta
-          title="Let’s disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
-      {/* End CTA Section */}
     </>
   );
 }

@@ -1,5 +1,4 @@
 "use client";
-import Cta from "@/app/ui/Cta";
 import Div from "@/app/ui/Div";
 import PageHeading from "@/app/ui/PageHeading";
 import SectionHeading from "@/app/ui/SectionHeading";
@@ -9,9 +8,7 @@ import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { events } from "@/constants";
 import { useRouter } from "next/navigation";
-import TiltedCard from "../ui/TiltedCard/TiltedCard";
 
-// Process events data
 const flattenEvents = Object.values(events)
   .flatMap((domainEvents) =>
     Object.values(domainEvents).map((event) => {
@@ -84,24 +81,6 @@ export default function EventsPage() {
                 src={event.src}
                 variant="cs-style1 cs-type1"
               />
-
-              {/* <TiltedCard
-                imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-                altText="Kendrick Lamar - GNX Album Cover"
-                captionText="Kendrick Lamar - GNX"
-                // containerHeight="300px"
-                // containerWidth="300px"
-                // imageHeight="300px"
-                // imageWidth="300px"
-                rotateAmplitude={12}
-                scaleOnHover={1.2}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
-                }
-              /> */}
               <Spacing lg="25" md="25" />
             </Div>
           ))}
@@ -125,33 +104,6 @@ export default function EventsPage() {
         </Div>
       </Div>
       <Spacing lg="70" md="50" />
-      {/* <div className="container">
-        <TiltedCard
-          imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
-          altText="Kendrick Lamar - GNX Album Cover"
-          captionText="Kendrick Lamar - GNX"
-          containerHeight="300px"
-          containerWidth="300px"
-          imageHeight="300px"
-          imageWidth="300px"
-          rotateAmplitude={12}
-          scaleOnHover={1.2}
-          showMobileWarning={false}
-          showTooltip={true}
-          displayOverlayContent={true}
-          overlayContent={
-            <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
-          }
-        />
-      </div> */}
-      {/* <Div className="container">
-        <Cta
-          title="Let's disscuse make <br />something <i>cool</i> together"
-          btnText="Apply For Meeting"
-          btnLink="/contact"
-          bgSrc="/images/cta_bg.jpeg"
-        />
-      </Div> */}
     </>
   );
 }
