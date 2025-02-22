@@ -75,14 +75,14 @@ function MenuItem({ link, text, domain, image }) {
 
   return (
     <div className="menu__item" ref={itemRef}>
-      <a
+      <span
         className="menu__item-link"
-        href={link}
+        // href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {text}
-      </a>
+      </span>
       <div className="marquee" ref={marqueeRef}>
         <div className="marquee__inner-wrap" ref={marqueeInnerRef}>
           <div className="marquee__inner" aria-hidden="true">

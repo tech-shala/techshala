@@ -57,13 +57,13 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://techshala.vpt.edu.in/" />
         <meta property="og:title" content="Techshala | VP | Technical Committee" />
         <meta property="og:description" content="Techshala is a technical committee of Vidyalankar Polytechnic College, Mumbai. It is a platform for students to learn and grow in the field of technology." />
-        <meta property="og:image" content="https://techshala.vpt.edu.in/meta_cover_image.png" />
+        <meta property="og:image" content="/meta_cover_image.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://techshala.vpt.edu.in/" />
         <meta property="twitter:title" content="Techshala | VP | Technical Committee" />
         <meta property="twitter:description" content="Techshala is a technical committee of Vidyalankar Polytechnic College, Mumbai. It is a platform for students to learn and grow in the field of technology." />
-        <meta property="twitter:image" content="https://techshala.vpt.edu.in/meta_cover_image.png" />
+        <meta property="twitter:image" content="/meta_cover_image.png" />
 
         <meta
           name="keywords"
