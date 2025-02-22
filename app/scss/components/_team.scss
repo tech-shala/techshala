@@ -13,6 +13,9 @@
       border-radius: inherit;
       transition: all 0.8s ease;
       filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
   }
   .cs-member_overlay {

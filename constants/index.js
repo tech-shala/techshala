@@ -153,50 +153,38 @@ export const events = {
 
 export const cto = [
   {
-    memberImage: "/images/member_1.jpeg",
+    // memberImage: "/images/member_1.jpeg",
     memberName: "Anjum Mujawar",
     memberDesignation: "CTO",
     memberSocial: {
       linkedin: "https://www.linkedin.com/in/anjummujawar/",
-      // twitter: "/",
-      // youtube: "/",
-      // facebook: "/",
     },
   },
 ]
 
 export const facultyTeam = [
   {
-    memberImage: "/images/member_1.jpeg",
+    // memberImage: "/images/member_1.jpeg",
     memberName: "Prasad Koyande",
     memberDesignation: "CO Techshala Faculty Head",
     memberSocial: {
       linkedin: "https://www.linkedin.com/in/prasad-koyande-b6b003145/",
-      // twitter: "/",
-      // youtube: "/",
-      // facebook: "/",
     },
   },
   {
-    memberImage: "/images/member_2.jpeg",
+    // memberImage: "/images/member_2.jpeg",
     memberName: "Kirthi Gupta",
     memberDesignation: "EJ Techshala Faculty Head",
     memberSocial: {
       linkedin: "https://www.linkedin.com/in/kirthi-gupta-199786191/",
-      // twitter: "/",
-      // youtube: "/",
-      // facebook: "/",
     },
   },
   {
-    memberImage: "/images/member_3.jpeg",
+    // memberImage: "/images/member_3.jpeg",
     memberName: "Gauri Bobade",
     memberDesignation: "IF Techshala Faculty Head",
     memberSocial: {
       linkedin: "https://www.linkedin.com/in/gauri-bobade-90723b2aa/",
-      // twitter: "/",
-      // youtube: "/",
-      // facebook: "/",
     },
   },
 ];
@@ -252,7 +240,7 @@ export const EJCoreTeam = [
   {
     // memberImage: "/images/member_1.jpeg",
     memberName: "Manish Chaupal",
-    memberDesignation: "CO Dept Tech Head",
+    memberDesignation: "EJ Dept Tech Head",
     memberSocial: {
       linkedin: "http://www.linkedin.com/in/manish-chaupal-a3211b293",
       // twitter: "/",
@@ -263,7 +251,7 @@ export const EJCoreTeam = [
   {
     // memberImage: "/images/member_2.jpeg",
     memberName: "Janhavi Gangan",
-    memberDesignation: "CO Dept Tech Head",
+    memberDesignation: "EJ Dept Tech Head",
     memberSocial: {
       linkedin: "https://www.linkedin.com/in/janhavi-gangan-3446b7271",
       // twitter: "/",

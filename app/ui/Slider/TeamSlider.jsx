@@ -1,65 +1,66 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import Slider from 'react-slick';
-import Div from '../Div';
-import Team from '../Team';
-const teamData = [
-  {
-    memberImage: '/images/member_1.jpeg',
-    memberName: 'Melon Bulgery',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_2.jpeg',
-    memberName: 'Olinaz Fushi',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_3.jpeg',
-    memberName: 'David Elone',
-    memberDesignation: 'React Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_4.jpeg',
-    memberName: 'Melina Opole',
-    memberDesignation: 'WP Developer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-  {
-    memberImage: '/images/member_1.jpeg',
-    memberName: 'Melon Bulgery',
-    memberDesignation: 'Product Designer',
-    memberSocial: {
-      linkedin: '/',
-      twitter: '/',
-      youtube: '/',
-      facebook: '/',
-    },
-  },
-];
+import { Icon } from "@iconify/react";
+import React from "react";
+import Slider from "react-slick";
+import Div from "../Div";
+import Team from "../Team";
+import { cto, facultyTeam } from "@/constants";
+// const teamData = [
+//   {
+//     memberImage: '/images/member_1.jpeg',
+//     memberName: 'Melon Bulgery',
+//     memberDesignation: 'Product Designer',
+//     memberSocial: {
+//       linkedin: '/',
+//       twitter: '/',
+//       youtube: '/',
+//       facebook: '/',
+//     },
+//   },
+//   {
+//     memberImage: '/images/member_2.jpeg',
+//     memberName: 'Olinaz Fushi',
+//     memberDesignation: 'Product Designer',
+//     memberSocial: {
+//       linkedin: '/',
+//       twitter: '/',
+//       youtube: '/',
+//       facebook: '/',
+//     },
+//   },
+//   {
+//     memberImage: '/images/member_3.jpeg',
+//     memberName: 'David Elone',
+//     memberDesignation: 'React Developer',
+//     memberSocial: {
+//       linkedin: '/',
+//       twitter: '/',
+//       youtube: '/',
+//       facebook: '/',
+//     },
+//   },
+//   {
+//     memberImage: '/images/member_4.jpeg',
+//     memberName: 'Melina Opole',
+//     memberDesignation: 'WP Developer',
+//     memberSocial: {
+//       linkedin: '/',
+//       twitter: '/',
+//       youtube: '/',
+//       facebook: '/',
+//     },
+//   },
+//   {
+//     memberImage: '/images/member_1.jpeg',
+//     memberName: 'Melon Bulgery',
+//     memberDesignation: 'Product Designer',
+//     memberSocial: {
+//       linkedin: '/',
+//       twitter: '/',
+//       youtube: '/',
+//       facebook: '/',
+//     },
+//   },
+// ];
 
 export default function TeamSlider() {
   /** Team Member Data **/
@@ -69,7 +70,7 @@ export default function TeamSlider() {
     <div
       {...props}
       className={
-        'slick-prev slick-arrow' + (currentSlide === 0 ? ' slick-disabled' : '')
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
@@ -81,8 +82,8 @@ export default function TeamSlider() {
     <div
       {...props}
       className={
-        'slick-next slick-arrow' +
-        (currentSlide === slideCount - 1 ? ' slick-disabled' : '')
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
@@ -126,7 +127,7 @@ export default function TeamSlider() {
 
   return (
     <Slider {...settings} className="cs-gap-24 cs-arrow_style2">
-      {teamData.map((item, index) => (
+      {[...cto, ...facultyTeam].map((item, index) => (
         <Div key={index}>
           <Team
             memberImage={item.memberImage}

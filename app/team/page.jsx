@@ -35,7 +35,7 @@ export default function TeamPage() {
           {cto.map((item, index) => (
             <Div key={index} className="col-lg-3 col-sm-6 mx-auto">
               <Team
-                // memberImage={item.memberImage}
+                memberImage={item.memberImage}
                 memberName={item.memberName}
                 memberDesignation={item.memberDesignation}
                 memberSocial={item.memberSocial}
@@ -44,12 +44,12 @@ export default function TeamPage() {
             </Div>
           ))}
         </Div>
-        <Spacing lg="90" md="45" />
+        {/* <Spacing lg="40" md="0" /> */}
         <Div className="row">
           {facultyTeam.map((item, index) => (
             <Div key={index} className="col-lg-3 col-sm-6 mx-auto">
               <Team
-                // memberImage={item.memberImage}
+                memberImage={item.memberImage}
                 memberName={item.memberName}
                 memberDesignation={item.memberDesignation}
                 memberSocial={item.memberSocial}
