@@ -19,12 +19,13 @@ export const funfaceData = [
 
 export const events = {
   web: {
-    "18022025": {
+    18022025: {
       title: "First Web Event",
       src: "/images/events/web/event.jpg",
       domain: "web",
       date: "18-02-2025",
-      description: "This is the first web event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the first web event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/web/first-web-event",
       venue: "Lab 003",
       fromTime: "05:00 PM",
@@ -35,20 +36,21 @@ export const events = {
       instructors: [
         {
           name: "Aryan Shinde",
-          designation: "Freelancer & Student"
+          designation: "Freelancer & Student",
         },
         {
           name: "Mohit Shedge",
-          designation: "Student"
-        }
-      ]
+          designation: "Student",
+        },
+      ],
     },
-    "28022025": {
+    28022025: {
       title: "Second Web Event",
       src: "/images/events/web/event.jpg",
       domain: "web",
       date: "28-02-2025",
-      description: "This is the second web event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the second web event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/web/second-web-event",
       venue: "Lab 003",
       fromTime: "10:00 AM",
@@ -59,16 +61,17 @@ export const events = {
       instructors: [
         {
           name: "Aryan Shinde",
-          designation: "Freelancer & Student"
+          designation: "Freelancer & Student",
         },
-      ]
+      ],
     },
     "08032025": {
       title: "Second Web Event",
       src: "/images/events/web/event.jpg",
       domain: "web",
       date: "08-03-2025",
-      description: "This is the second web event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the second web event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/web/second-web-event",
       venue: "Lab 003",
       fromTime: "10:00 AM",
@@ -79,19 +82,19 @@ export const events = {
       instructors: [
         {
           name: "Aryan Shinde",
-          designation: "Freelancer & Student"
+          designation: "Freelancer & Student",
         },
-      ]
+      ],
     },
-
   },
   app: {
-    "24022025": {
+    24022025: {
       title: "First App Event",
       src: "/images/events/app/event.jpg",
       domain: "app",
       date: "24-02-2025",
-      description: "This is the first app event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the first app event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/app/first-app-event",
       venue: "Lab 004",
       fromTime: "10:00 AM",
@@ -102,10 +105,10 @@ export const events = {
       instructors: [
         {
           name: "Yash Nimse",
-          designation: "Freelancer & Student"
-        }
-      ]
-    }
+          designation: "Freelancer & Student",
+        },
+      ],
+    },
   },
   blockchain: {
     "04032025": {
@@ -113,7 +116,8 @@ export const events = {
       src: "/images/events/blockchain/event.jpg",
       domain: "blockchain",
       date: "04-03-2025",
-      description: "This is the first blockchain event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the first blockchain event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/blockchain/first-blockchain-event",
       venue: "Lab 001",
       fromTime: "03:00 PM",
@@ -124,16 +128,17 @@ export const events = {
       instructors: [
         {
           name: "Shreyash",
-          designation: "Student"
-        }
-      ]
+          designation: "Student",
+        },
+      ],
     },
-    "15032025": {
+    15032025: {
       title: "First Blockchain Event",
       src: "/images/events/blockchain/event.jpg",
       domain: "blockchain",
       date: "15-03-2025",
-      description: "This is the first blockchain event of the year. It will be a full day event with a lot of activities and workshops.",
+      description:
+        "This is the first blockchain event of the year. It will be a full day event with a lot of activities and workshops.",
       href: "/events/blockchain/first-blockchain-event",
       venue: "Lab 001",
       fromTime: "03:00 PM",
@@ -144,14 +149,12 @@ export const events = {
       instructors: [
         {
           name: "Shreyash",
-          designation: "Student"
-        }
-      ]
-    }
+          designation: "Student",
+        },
+      ],
+    },
   },
-  techfest: {
-    
-  }
+  techfest: {},
 };
 
 export const cto = [
@@ -163,11 +166,11 @@ export const cto = [
       linkedin: "https://www.linkedin.com/in/anjummujawar/",
     },
   },
-]
+];
 
 export const facultyTeam = [
   {
-    // memberImage: "/images/member_1.jpeg",
+    memberImage: "/team-images/Faculty/Prasad.png",
     memberName: "Prasad Koyande",
     memberDesignation: "CO Techshala Faculty Head",
     memberSocial: {
@@ -175,7 +178,7 @@ export const facultyTeam = [
     },
   },
   {
-    // memberImage: "/images/member_2.jpeg",
+    // memberImage: "/team-images/Faculty/Prasad.png",
     memberName: "Kirthi Gupta",
     memberDesignation: "EJ Techshala Faculty Head",
     memberSocial: {
@@ -183,7 +186,7 @@ export const facultyTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/Faculty/Gauri.jpeg",
     memberName: "Gauri Bobade",
     memberDesignation: "IF Techshala Faculty Head",
     memberSocial: {
@@ -194,7 +197,7 @@ export const facultyTeam = [
 
 export const COCoreTeam = [
   {
-    // memberImage: "/images/member_1.jpeg",
+    memberImage: "/team-images/CO/Kunal.png",
     memberName: "Kunal Patil",
     memberDesignation: "CO Dept Tech Head",
     memberSocial: {
@@ -205,7 +208,7 @@ export const COCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_2.jpeg",
+    memberImage: "/team-images/CO/Huzan.png",
     memberName: "Huzan Shroff",
     memberDesignation: "CO Dept Tech Head",
     memberSocial: {
@@ -216,7 +219,7 @@ export const COCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/CO/Aditya.PNG",
     memberName: "Aditya Darekar",
     memberDesignation: "CO Dept SPOC",
     memberSocial: {
@@ -227,7 +230,7 @@ export const COCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/CO/Sumera.JPG",
     memberName: "Sumera Bijle",
     memberDesignation: "CO Dept SPOC",
     memberSocial: {
@@ -241,7 +244,7 @@ export const COCoreTeam = [
 
 export const EJCoreTeam = [
   {
-    // memberImage: "/images/member_1.jpeg",
+    memberImage: "/team-images/EJ/Manish.jpeg",
     memberName: "Manish Chaupal",
     memberDesignation: "EJ Dept Tech Head",
     memberSocial: {
@@ -252,7 +255,7 @@ export const EJCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_2.jpeg",
+    memberImage: "/team-images/EJ/Janhavi.jpg",
     memberName: "Janhavi Gangan",
     memberDesignation: "EJ Dept Tech Head",
     memberSocial: {
@@ -263,7 +266,7 @@ export const EJCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/EJ/Manasvi.jpg",
     memberName: "Manasvi Rane",
     memberDesignation: "EJ Dept SPOC",
     memberSocial: {
@@ -274,7 +277,7 @@ export const EJCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/EJ/Riya.jpg",
     memberName: "Riya S",
     memberDesignation: "EJ Dept SPOC",
     memberSocial: {
@@ -288,7 +291,7 @@ export const EJCoreTeam = [
 
 export const IFCoreTeam = [
   {
-    // memberImage: "/images/member_1.jpeg",
+    memberImage: "/team-images/IF/Seher.png",
     memberName: "Seher Siddiqui",
     memberDesignation: "IF Dept Tech Head",
     memberSocial: {
@@ -299,7 +302,7 @@ export const IFCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_2.jpeg",
+    memberImage: "/team-images/IF/Pranav.jpg",
     memberName: "Pranav Sawant",
     memberDesignation: "IF Dept Tech Head",
     memberSocial: {
@@ -310,7 +313,7 @@ export const IFCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/IF/Deep.jpg",
     memberName: "Deep Patil",
     memberDesignation: "IF Dept SPOC",
     memberSocial: {
@@ -321,7 +324,7 @@ export const IFCoreTeam = [
     },
   },
   {
-    // memberImage: "/images/member_3.jpeg",
+    memberImage: "/team-images/IF/Swara.jpg",
     memberName: "Swara Khandekar",
     memberDesignation: "IF Dept SPOC",
     memberSocial: {
@@ -337,7 +340,7 @@ export const domainHeads = [
   {
     link: "#",
     text: "Web Development Domain",
-    domain: "Aryan Shinde | Aryan Remje",
+    domain: "Aryan Shinde | Aryan Remje | ",
     image: "https://picsum.photos/600/400?random=1",
   },
 
