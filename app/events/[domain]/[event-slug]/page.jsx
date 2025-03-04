@@ -72,7 +72,13 @@ export default function EventDetailsPage() {
               subtitle={domain.charAt(0).toUpperCase() + domain.slice(1)}
             >
               <Spacing lg="40" md="20" />
-              <p>{event.description}</p>
+              {/* <p dangerouslySetInnerHTML={{ __html: event.description }}></p> */}
+              {event.description.split("\n").map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
+              ))}
             </SectionHeading>
           </div>
 
