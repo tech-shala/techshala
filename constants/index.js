@@ -251,13 +251,13 @@ Yash Awhad :- +91 9136316789`,
         },
       ],
     },
-    "zero-ping-0.0":{
+    "zero-ping":{
       title: "Zero Ping 0.0",
-      src: "/images/events/app/event.jpg",
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741093752/WhatsApp_Image_2025-03-04_at_18.17.16_nbk8oi.jpg",
       domain: "techfest",
       date: "07-03-2025",
       description: "Zero Ping 0.0 - An exciting event as part of TechShala.",
-      href: "/events/techfest/zero-ping-0.0",
+      href: "/events/techfest/zero-ping",
       venue: "V201,V209",
       fromTime: "NA",
       toTime: "NA",
@@ -273,7 +273,7 @@ Yash Awhad :- +91 9136316789`,
     },
     "drone-racing-grand-prix":{
       title: "Drone Racing Grand Prix ",
-      src: "/images/techfest/app/event.jpg",
+      src: "/images/events/app/event.jpg",
       domain: "iot",
       date: "07-03-2025",
       description:
@@ -756,6 +756,307 @@ Adesh Rai :- 7304012624`,
           designation: "Event Head",
         },
       ],
+    },
+    "msbte-state-level":{
+      title: "MSBTE State-Level Project Competition (Intercollegiate)",
+      src: "/images/events/blockchain/event.jpg",
+      domain: "TechShala",
+      date: "08-03-2025",
+      description: "This is a state level project exhibition competition for Final Year Diploma Students.",
+      href: "/events/techfest/msbte-state-level",
+      venue: "VIT-A Block Plaza",
+      fromTime: "10:00 AM",
+      toTime: "03:00 PM",
+      duration: 5,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "NA",
+    },
+    "autogest-bots":{
+      title: "AutoGest Bots – AI-Powered Bot Control Using Hand Gestures.",
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741083539/TechshalaEventImages/wcv3ykiptb22fz8jtscn.jpg",
+      domain: "AI/ML",
+      date: "08-03-2025",
+      description: 
+      `AutoGest Bots: Control the Race with Just Your Hands! 🔥
+
+Step into the future of technology with gesture-controlled robotic cars. No remotes, no controllers—just pure innovation! Navigate through a smart track, race against time, and experience real-time automation.
+
+📍 Event Details:
+📅 8th March 2025
+⏳ 10:00 AM - 03:00 PM
+📌 Venue: Right in front of VP (Vidyalankar Polytechnic)
+
+🏆 Top 3 Racers receives a medal 
+
+Don't just watch—be a part of the experience!
+
+🎟 Register now: https://lu.ma/ewzd8vnn
+
+For any queries, contact:
+Event Head: Pranav Sawant  
++91 8767842142
+
+Warm regards,
+Committee Members:
+Er. Prasad Koyande
+Er. Kirthi Gupta
+Er. Gauri Bobade
+
+Chief Technical Head:
+Er. Anjum Mujawar
+
+Principal:
+Prof. Ashish Ukidve
+Vidyalankar Polytechnic`,
+      href: "/events/techfest/autogest-bots",
+      venue: "Vp Front",
+      fromTime: "10:00 AM",
+      toTime: "03:00 PM",
+      duration: 5,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "https://lu.ma/ewzd8vnn",
+      instructors: [
+        {
+          name: "Pranav Sawant",
+          designation: "Student"
+        }
+      ]
+    },
+    "concept-2-cash":{
+      title: "Concept2Cash.",
+      src: "/images/events/blockchain/event.jpg",
+      domain: "IoT",
+      date: "08-03-2025",
+      description: "AutoGest Bots: Control the Race with Just Your Hands! ",
+      href: "/events/techfest/concept-2-cash",
+      venue: "Vp Front",
+      fromTime: "10:00 AM",
+      toTime: "11:30 PM",
+      duration: 2,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "NA",
+      instructors: [
+        {
+          name: "Manasvi",
+          designation: "Student"
+        }
+      ]
+    },
+    "breadboard-to-pcb":{
+      title: "BREADBOARD TO PCB",
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741091407/WhatsApp_Image_2025-03-03_at_22.46.55_ipr1hk.jpg",
+      domain: "IoT",
+      date: "08-03-2025",
+      description: `⚡ BREADBOARD TO PCB – THE ULTIMATE CHALLENGE! ⚡
+
+Are you ready to transform your circuit design skills and prove yourself in the ultimate PCB design showdown? Welcome to TechShala’s most electrifying event – BREADBOARD TO PCB!
+
+💡 THE CHALLENGE:
+This isn’t just another competition—this is a test of precision, speed, and technical prowess. As an individual participant, you will be given a breadboard circuit and must convert it into a professional PCB layout using KiCad. Your design will be judged on schematic accuracy, component placement, routing efficiency, and compliance with design rules.
+
+⚙ ANALYZE.DESIGN.OPTIMIZE.WIN. ⚙
+
+📅 Date: 08-03-2025
+🕘 Time: 11:00 AM – 3:00 PM
+🏢 Venue: Lab 16, Vidyalankar Polytechnic
+
+🔗 Think you have what it takes? Register now: https://lu.ma/zd4p3a9f
+
+🏆 THE REWARDS:
+🔥 Top performers will earn industry-recognized certificates & exclusive awards.
+🎖 All participants will receive a certificate of participation.
+
+Do you have what it takes to be the ultimate PCB designer? 🚀
+
+Warm regards,
+Sachin Rajak - +91 95944 85871`,
+      href: "/events/techfest/breadboard-to-pcb",
+      venue: "Lab 16",
+      fromTime: "11:00 AM",
+      toTime: "03:00 PM",
+      duration: 4,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "https://lu.ma/zd4p3a9f",
+      instructors: [
+        {
+          name: "Sachin Rajak",
+          designation: "Student"
+        }
+      ]
+    },
+    "big-o-wars":{
+      title: "Big-O Wars",
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741083539/TechshalaEventImages/n0jhrsrnucptgmlm9ekh.jpg",
+      domain: "Web Development",
+      date: "08-03-2025",
+      description: `📢 Attention Coders! 🚀
+
+🔹 Big-O Wars: The Ultimate DSA Challenge 🔹
+
+Are you ready to test your Data Structures & Algorithms skills and compete against the best? 🏆 Join us for an intense showdown where speed, accuracy, and efficiency will decide the champion!
+
+📌 Event Details:
+📅 Date: 08/03/2025
+⏳ Time: 10:00 am to 12:00 am
+📍 Location: LAB 001 VIT Basement
+
+💡 Theme: ""Cracking the Code – One Algorithm at a Time!""
+
+🔥 Exciting prizes & certificates await the winners! 🔥
+
+✅ Register now: https://lu.ma/sn6na0tr
+
+Warm regards,
+Committee Members:
+Er. Prasad Koyande
+Er. Kirthi Gupta
+Er. Gauri Bobade
+
+Chief Technical Head:
+Er. Anjum Mujawar
+
+Principal:
+Prof. Ashish Ukidve
+Vidyalankar Polytechnic
+
+For queries, contact 
+Yash Gharge :- +91 9653217923.
+
+Don’t miss out—secure your spot now! 🚀
+#BigOWars #DSAChallenge`,
+      href: "/events/techfest/big-o-wars",
+      venue: "Lab 001",
+      fromTime: "10:00 AM",
+      toTime: "12:00 PM",
+      duration: 2,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "https://lu.ma/sn6na0tr",
+      instructors: [
+        {
+          name: "Yash Gharge",
+          designation: "Student"
+        }
+      ]
+    },
+    "ai-illusion":{
+      title: "AI-ILLUSION",
+      href:"/events/techfest/ai-illusion" ,
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741083538/TechshalaEventImages/k3rydv24ociddardndbv.jpg",
+      domain: "AI/ML",
+      date: "08-03-2025",
+      description: `📢 Attention Detectives! 🕵🏻
+
+🔹 AI-LLUSION : A Murder Mystery Experience 🔹
+
+ Are you ready to put your detective skills to the test? 🔍 Dive into AI-LLUSION, where sharp analysis, quick thinking, and AI-powered forensics will lead you to the truth! Can you crack the case before time runs out? 🕵‍♂
+
+📌 Event Details:
+📅 Date: 08/03/2025
+⏳ Time: 10:00 am to 1:00 am
+📍 Location: LAB 003 VIT Basement
+
+💡 Theme: ""Decode secrets, analyze clues, and catch the culprit with AI!""
+
+🔥 Exciting prizes & certificates await the winners! 🔥
+
+✅ Register now :-
+https://lu.ma/t9c6diq1
+
+Warm regards,
+Committee Members:
+Er. Prasad Koyande
+Er. Kirthi Gupta
+Er. Gauri Bobade
+
+Chief Technical Head:
+Er. Anjum Mujawar
+
+Principal:
+Prof. Ashish Ukidve
+Vidyalankar Polytechnic
+
+For queries, contact 
+Aradhya Patil :- 9819072953
+
+Don’t miss out—secure your spot now! 🚀
+#AILLUSION#MurderMystery`,
+      venue: "LAB 003",
+      fromTime: "10:00 AM",
+      toTime: "01:00 PM",
+      duration: 3,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "https://lu.ma/t9c6diq1",
+      instructors: [
+        {
+          name: "Aradhya Patil",
+          designation: "Student"
+        }
+      ]
+    },
+    "debugging-duel":{
+      title: "Debugging Duel",
+      src: "https://res.cloudinary.com/dnshzyk0z/image/upload/v1741083539/TechshalaEventImages/kfuwvne4r3thcbowlwae.jpg",
+      domain: "Web Development",
+      date: "08-03-2025",
+      description: ` Debugging Duel – Are You Ready to Battle the Bugs?  
+
+Think you can outsmart the toughest code errors? It’s time to put your debugging skills to the test in The Websters' Debugging Duel – a fast-paced, high-stakes coding competition where only the sharpest minds prevail.  
+
+Why Join? 
+- Challenge Yourself – Solve real-world web development bugs under pressure.  
+- Compete & Win – Exciting prizes, certificates, and bragging rights await.  
+- Sharpen Your Skills – Improve your problem-solving and debugging speed.  
+
+ Event Details:
+📍 Venue: Lab 02
+📅 Date: 08-03-2025  
+⏰ Time: 12 pm - 2 pm
+👥 Teams:  2 members per team (40 teams max)  
+
+Prizes & Recognition:  
+🏆 Winner:  Hard Copy Certificate + Medals 
+🥈 Runners-up: Runner up E-Certificates  
+📜 All Participants: E-Certificates  
+
+Limited slots available – register now before it’s too late!  
+
+🔗 Register Here:
+ 
+
+Get ready to debug, compete, and win!`,
+      href:  "/events/techfest/debugging-duel",
+      venue: "LAB 002",
+      fromTime: "12:00 PM",
+      toTime: "02:00 PM",
+      duration: 2,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "NA",
+      instructors: [
+        {
+          name: "Aryan Remje",
+          designation: "Student"
+        }
+      ]
+    },
+    "firewall-fortress":{
+      title: "Firewall Fortress",
+      src: "Cyber-Security",
+      domain: "Web Development",
+      date: "08-03-2025",
+      description: "",
+      href: "/events/techfest/firewall-fortress",
+      venue: "LAB 004",
+      fromTime: "10:00 AM",
+      toTime: "05:00 PM",
+      duration: 7,
+      registrationDeadline: "07-03-2025",
+      registrationLink: "NA",
+      instructors: [
+        {
+          name: "Ved",
+          designation: "Student"
+        }
+      ]
     },
   },
 };

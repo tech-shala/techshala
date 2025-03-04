@@ -9,28 +9,30 @@ import Spacing from "@/app/ui/Spacing";
 import Image from "next/image";
 import { events } from "@/constants";
 
-// Helper function to convert title to slug
-const createSlug = (title) => {
-  return title
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .trim();
-};
+// // Helper function to convert title to slug
+// const createSlug = (title) => {
+//   return title
+//     .toLowerCase()
+//     .replace(/[^a-z0-9\s-]/g, "")
+//     .replace(/\s+/g, "-")
+//     .replace(/-+/g, "-")
+//     .trim();
+// };
 
 export default function EventDetailsPage() {
   const params = useParams();
   const { domain, "event-slug": eventSlug } = params;
   console.log(domain, eventSlug);
   // Find the event by checking the slugified title
-  const event = Object.entries(events[domain] || {}).reduce(
-    (found, [dateKey, eventData]) => {
-      const eventSlugTitle = createSlug(eventData.title);
-      return eventSlugTitle === eventSlug ? eventData : found;
-    },
-    null
-  );
+  // const event = Object.entries(events[domain] || {}).reduce(
+  //   (found, [dateKey, eventData]) => {
+  //     const eventSlugTitle = createSlug(eventData.title);
+  //     return eventSlugTitle === eventSlug ? eventData : found;
+  //   },
+  //   null
+  // );
+  const event = events[domain][eventSlug];
+  console.log(event);
 
   if (!event) {
     return <div>Event not found</div>;
@@ -136,6 +138,7 @@ export default function EventDetailsPage() {
                   btnLink={event.registrationLink}
                   btnText="Register Now"
                   variant="cs-type1"
+                  type="socialLink"
                 />
               </div>
             </div>
