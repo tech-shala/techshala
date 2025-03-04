@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
         <Toaster position="bottom-right" />
         <Header />
         {/* <CustomCursor /> */}
-        <SplashCursor />
+
         {children}
         <Footer />
       </body>
