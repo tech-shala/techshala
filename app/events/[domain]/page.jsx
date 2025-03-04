@@ -10,7 +10,7 @@ import { events } from "@/constants";
 import { useParams, useRouter } from "next/navigation";
 
 export default function DomainEventsPage() {
-  const [itemShow, setItemShow] = useState(7);
+  const [itemShow, setItemShow] = useState(6)
   const router = useRouter();
   const { domain } = useParams();
 
