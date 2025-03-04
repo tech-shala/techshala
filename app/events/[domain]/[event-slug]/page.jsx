@@ -52,7 +52,7 @@ export default function EventDetailsPage() {
 
       <Spacing lg="150" md="80" />
 
-      <Div className="container">
+      <div className="container">
         <Image
           src={event.src}
           alt={event.title}
@@ -63,8 +63,8 @@ export default function EventDetailsPage() {
 
         <Spacing lg="90" md="40" />
 
-        <Div className="row">
-          <Div className="col-lg-6">
+        <div className="row">
+          <div className="col-lg-6">
             <SectionHeading
               title={event.title}
               subtitle={domain.charAt(0).toUpperCase() + domain.slice(1)}
@@ -72,47 +72,47 @@ export default function EventDetailsPage() {
               <Spacing lg="40" md="20" />
               <p>{event.description}</p>
             </SectionHeading>
-          </Div>
+          </div>
 
-          <Div className="col-lg-5 offset-lg-1">
+          <div className="col-lg-5 offset-lg-1">
             <Spacing lg="60" md="40" />
             <h2 className="cs-font_30 cs-font_26_sm cs-m0">Event Info -</h2>
             <Spacing lg="50" md="30" />
 
-            <Div className="row">
-              <Div className="col-6">
+            <div className="row">
+              <div className="col-6">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Date:
                 </h3>
                 <p className="cs-m0">{formatDate(event.date)}</p>
                 <Spacing lg="30" md="30" />
-              </Div>
+              </div>
 
-              <Div className="col-6">
+              <div className="col-6">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Time:
                 </h3>
                 <p className="cs-m0">{`${event.fromTime} - ${event.toTime}`}</p>
                 <Spacing lg="30" md="30" />
-              </Div>
+              </div>
 
-              <Div className="col-6">
+              <div className="col-6">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Venue:
                 </h3>
                 <p className="cs-m0">{event.venue}</p>
                 <Spacing lg="30" md="30" />
-              </Div>
+              </div>
 
-              <Div className="col-6">
+              <div className="col-6">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Duration:
                 </h3>
                 <p className="cs-m0">{`${event.duration} hours`}</p>
                 <Spacing lg="30" md="30" />
-              </Div>
+              </div>
 
-              <Div className="col-12">
+              <div className="col-12">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Instructors:
                 </h3>
@@ -122,9 +122,9 @@ export default function EventDetailsPage() {
                   </p>
                 ))}
                 <Spacing lg="30" md="30" />
-              </Div>
+              </div>
 
-              <Div className="col-12">
+              <div className="col-12">
                 <h3 className="cs-accent_color cs-font_22 cs-font_18_sm cs-m0">
                   Registration Deadline:
                 </h3>
@@ -137,11 +137,11 @@ export default function EventDetailsPage() {
                   btnText="Register Now"
                   variant="cs-type1"
                 />
-              </Div>
-            </Div>
-          </Div>
-        </Div>
-      </Div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Spacing lg="145" md="80" />
     </>

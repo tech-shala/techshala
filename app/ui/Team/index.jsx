@@ -10,18 +10,18 @@ export default function Team({
   memberSocial,
 }) {
   return (
-    <Div className="cs-team cs-style1">
-      <Div className="cs-member_thumb">
+    <div className="cs-team cs-style1">
+      <div className="cs-member_thumb">
         <img src={memberImage} alt={memberName} />
-        <Div className="cs-member_overlay" />
-      </Div>
-      <Div className="cs-member_info">
+        <div className="cs-member_overlay" />
+      </div>
+      <div className="cs-member_info">
         <h2 className="cs-member_name">
           <span>{memberName}</span>
         </h2>
-        <Div className="cs-member_designation">{memberDesignation}</Div>
-      </Div>
-      <Div className="cs-member_social cs-primary_color">
+        <div className="cs-member_designation">{memberDesignation}</div>
+      </div>
+      <div className="cs-member_social cs-primary_color">
         {memberSocial.linkedin && (
           <Link href={memberSocial.linkedin}>
             <Icon icon="fa6-brands:linkedin-in" />
@@ -42,7 +42,7 @@ export default function Team({
             <Icon icon="fa-brands:facebook-f" />
           </Link>
         )}
-      </Div>
-    </Div>
+      </div>
+    </div>
   );
 }

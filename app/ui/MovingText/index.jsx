@@ -3,15 +3,15 @@ import Div from '../Div';
 
 export default function MovingText({ text, variant }) {
   return (
-    <Div
+    <div
       className={`cs-moving_text_wrap cs-bold cs-primary_font ${
         variant ? variant : ''
       }`}
     >
-      <Div className="cs-moving_text_in">
-        <Div className="cs-moving_text">{text}</Div>
-        <Div className="cs-moving_text">{text}</Div>
-      </Div>
-    </Div>
+      <div className="cs-moving_text_in">
+        <div className="cs-moving_text">{text}</div>
+        <div className="cs-moving_text">{text}</div>
+      </div>
+    </div>
   );
 }

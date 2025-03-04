@@ -168,10 +168,10 @@ export default function MasonryGallery() {
 
   return (
     <>
-      <Div className="container">
-        <Div className="cs-portfolio_1_heading">
+      <div className="container">
+        <div className="cs-portfolio_1_heading">
           <SectionHeading title="Some recent work" subtitle="Our Portfolio" />
-          <Div className="cs-filter_menu cs-style1">
+          <div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
               <li className={active === "all" ? "active" : ""}>
                 <span onClick={() => setActive("all")}>All</span>
@@ -187,9 +187,9 @@ export default function MasonryGallery() {
                 </li>
               ))}
             </ul>
-          </Div>
-        </Div>
-      </Div>
+          </div>
+        </div>
+      </div>
       <Spacing lg="90" md="45" />
       <LightGallery
         speed={500}
@@ -197,7 +197,7 @@ export default function MasonryGallery() {
         elementClassNames="cs-masonry_4_col"
       >
         {portfolioData.slice(0, itemShow).map((item, index) => (
-          <Div
+          <div
             href={item.src}
             className={`${
               active === "all"
@@ -208,34 +208,34 @@ export default function MasonryGallery() {
             }`}
             key={index}
           >
-            <Div
+            <div
               className="cs-portfolio cs-style1 cs-type2"
               style={{ height: `${item.height}px` }}
             >
-              <Div className="cs-lightbox_item">
+              <div className="cs-lightbox_item">
                 <img
                   src={item.src}
                   alt={item.title}
                   style={{ height: `${item.height}px` }}
                 />
-              </Div>
-              <Div className="cs-portfolio_hover" />
+              </div>
+              <div className="cs-portfolio_hover" />
               <span className="cs-plus" />
-              <Div
+              <div
                 className="cs-portfolio_bg cs-bg"
                 style={{ backgroundImage: `url("${item.src}")` }}
               />
-              <Div className="cs-portfolio_info">
-                <Div className="cs-portfolio_info_bg cs-accent_bg" />
+              <div className="cs-portfolio_info">
+                <div className="cs-portfolio_info_bg cs-accent_bg" />
                 <h2 className="cs-portfolio_title">{item.title}</h2>
-                <Div className="cs-portfolio_subtitle">{item.subtitle}</Div>
-              </Div>
-            </Div>
-          </Div>
+                <div className="cs-portfolio_subtitle">{item.subtitle}</div>
+              </div>
+            </div>
+          </div>
         ))}
       </LightGallery>
-      <Div className="container">
-        <Div className="text-center">
+      <div className="container">
+        <div className="text-center">
           {portfolioData.length <= itemShow ? (
             ""
           ) : (
@@ -250,8 +250,8 @@ export default function MasonryGallery() {
               </span>
             </>
           )}
-        </Div>
-      </Div>
+        </div>
+      </div>
     </>
   );
 }

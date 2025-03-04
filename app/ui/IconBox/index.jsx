@@ -4,12 +4,12 @@ import Div from "../Div";
 
 export default function IconBox({ title, subtitle, icon }) {
   return (
-    <Div className="cs-iconbox cs-style1 text-center">
-      <Div className="cs-iconbox_icon">
+    <div className="cs-iconbox cs-style1 text-center">
+      <div className="cs-iconbox_icon">
         <img src={icon} alt="Icon" />
-      </Div>
+      </div>
       <h2 className="cs-iconbox_title">{parse(title)}</h2>
-      <Div className="cs-iconbox_subtitle">{parse(subtitle)}</Div>
-    </Div>
+      <div className="cs-iconbox_subtitle">{parse(subtitle)}</div>
+    </div>
   );
 }

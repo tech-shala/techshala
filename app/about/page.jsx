@@ -21,9 +21,9 @@ export default function AboutPage() {
 
       {/* Start About Section */}
       <Spacing lg="150" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-xl-5 col-lg-7">
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-5 col-lg-7">
             <SectionHeading
               title="TechShala - Learn Beyond Classroom!"
               subtitle="Who We Are?"
@@ -41,11 +41,11 @@ export default function AboutPage() {
                 successful careers in the ever-evolving technological landscape.
               </p>
               <Spacing lg="30" md="30" />
-              <Div className="cs-separator cs-accent_bg"></Div>
+              <div className="cs-separator cs-accent_bg"></div>
               <Spacing lg="25" md="40" />
             </SectionHeading>
-          </Div>
-          <Div className="col-lg-5 offset-xl-2">
+          </div>
+          <div className="col-lg-5 offset-xl-2">
             <Image
               src="/images/about_image.png"
               alt="About"
@@ -54,25 +54,25 @@ export default function AboutPage() {
               height={600}
             />
             <Spacing lg="25" md="25" />
-          </Div>
-        </Div>
-      </Div>
+          </div>
+        </div>
+      </div>
       <Spacing lg="75" md="55" />
       {/* End About Section */}
 
       {/* Start Fun Fact Section */}
-      <Div className="container">
+      <div className="container">
         <FunFact
           title="Some Stats."
           subtitle="It's been 5+ years since Techshala is been established, and we have successfully organized 500+ workshops, with over more than 150k+ participation of students in whole."
           data={funfaceData}
         />
-      </Div>
+      </div>
       {/* End Fun Fact Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />
-      <Div className="container">
+      <div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
           subtitle="Our Team"
@@ -80,7 +80,7 @@ export default function AboutPage() {
         />
         <Spacing lg="85" md="45" />
         <TeamSlider />
-      </Div>
+      </div>
       {/* End Team Section */}
 
       <Spacing lg="150" md="80" />

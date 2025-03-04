@@ -28,14 +28,14 @@ export default function EventSlider({ data }) {
   return (
     <Slider {...settings} className="cs-slider cs-style3 cs-gap-24">
       {data.map((item, index) => (
-        <Div key={index}>
+        <div key={index}>
           <Event
             title={item.title}
             subtitle="View Event"
             href={item.href}
             src={item.src}
           />
-        </Div>
+        </div>
       ))}
     </Slider>
   );

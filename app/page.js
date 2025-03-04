@@ -74,10 +74,10 @@ export default function Home() {
 
       {/* Start Domains Section */}
       <Spacing lg="150" md="80" />
-      <Div id="domains">
-        <Div className="container">
-          <Div className="row">
-            <Div className="col-xl-4">
+      <div id="domains">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-4">
               <SectionHeading
                 title="What domains are we in?"
                 subtitle="Our Domains"
@@ -85,11 +85,11 @@ export default function Home() {
                 btnLink="/events"
               />
               <Spacing lg="90" md="45" />
-            </Div>
-            <Div className="col-xl-8">
-              <Div className="row">
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+            </div>
+            <div className="col-xl-8">
+              <div className="row">
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="App Devlopment"
                     link="/events/app"
@@ -97,9 +97,9 @@ export default function Home() {
                     alt="App Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                </div>
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="Web Development"
                     link="/events/web"
@@ -107,8 +107,8 @@ export default function Home() {
                     alt="Web Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6">
+                </div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="Blockchain Development"
                     link="/events/blockchain"
@@ -116,9 +116,9 @@ export default function Home() {
                     alt="Blockchain Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                </div>
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="Cyber Security"
                     link="/events/cybersecurity"
@@ -126,10 +126,10 @@ export default function Home() {
                     alt="Cyber Security Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                </div>
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="AI / ML Development"
                     link="/events/aiml"
@@ -137,9 +137,9 @@ export default function Home() {
                     alt="AI / ML Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-                <Div className="col-lg-3 col-sm-6 cs-hidden_mobile"></Div>
-                <Div className="col-lg-3 col-sm-6">
+                </div>
+                <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                <div className="col-lg-3 col-sm-6">
                   <Card
                     title="IoT Development"
                     link="/events/iot"
@@ -147,32 +147,32 @@ export default function Home() {
                     alt="IoT Domain"
                   />
                   <Spacing lg="0" md="30" />
-                </Div>
-              </Div>
-            </Div>
-          </Div>
-        </Div>
-      </Div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* End Domains Section */}
 
       {/* Start Events Section */}
       <Spacing lg="150" md="50" />
-      <Div>
-        <Div className="container">
+      <div>
+        <div className="container">
           <SectionHeading
             title="Upcoming Events"
             subtitle="Our Events"
             variant="cs-style1 text-center"
           />
           <Spacing lg="90" md="45" />
-        </Div>
+        </div>
         <EventSlider data={latestEvents} />
-      </Div>
+      </div>
       {/* End Events Section */}
 
       {/* Start Team Section */}
       <Spacing lg="145" md="80" />
-      <Div className="container">
+      <div className="container">
         <SectionHeading
           title="Awesome team <br/>members"
           subtitle="Our Team"
@@ -180,7 +180,7 @@ export default function Home() {
         />
         <Spacing lg="85" md="45" />
         <TeamSlider />
-      </Div>
+      </div>
       {/* End Team Section */}
 
       {/* Start MovingText Section */}

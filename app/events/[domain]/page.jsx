@@ -44,13 +44,13 @@ export default function DomainEventsPage() {
         pageLinkText="Events"
       />
       <Spacing lg="145" md="80" />
-      <Div className="container">
-        <Div className="cs-portfolio_1_heading">
+      <div className="container">
+        <div className="cs-portfolio_1_heading">
           <SectionHeading
             title={`${domain.charAt(0).toUpperCase() + domain.slice(1)} Events`}
             subtitle="Our Events"
           />
-          <Div className="cs-filter_menu cs-style1">
+          <div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
               <li>
                 <span onClick={() => router.push("/events")}>All</span>
@@ -66,12 +66,12 @@ export default function DomainEventsPage() {
                 </li>
               ))}
             </ul>
-          </Div>
-        </Div>
+          </div>
+        </div>
         <Spacing lg="90" md="45" />
-        <Div className="row">
+        <div className="row">
           {processedEvents.slice(0, itemShow).map((event, index) => (
-            <Div className="col-lg-4" key={index}>
+            <div className="col-lg-4" key={index}>
               <Portfolio
                 title={event.title}
                 subtitle={`${event.date} - ${event.status}`}
@@ -80,11 +80,11 @@ export default function DomainEventsPage() {
                 variant="cs-style1 cs-type1"
               />
               <Spacing lg="25" md="25" />
-            </Div>
+            </div>
           ))}
-        </Div>
+        </div>
 
-        <Div className="text-center">
+        <div className="text-center">
           {processedEvents.length <= itemShow ? (
             ""
           ) : (
@@ -99,8 +99,8 @@ export default function DomainEventsPage() {
               </span>
             </>
           )}
-        </Div>
-      </Div>
+        </div>
+      </div>
       <Spacing lg="70" md="50" />
     </>
   );

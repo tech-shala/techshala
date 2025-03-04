@@ -24,16 +24,16 @@ export default function TeamPage() {
         pageLinkText="Team"
       />
       <Spacing lg="145" md="80" />
-      <Div className="container">
+      <div className="container">
         <SectionHeading
           title="Meet our awesome <br/>Faculty Heads"
           subtitle="Our Team"
           variant="cs-style1 text-center"
         />
         <Spacing lg="90" md="45" />
-        <Div className="row">
+        <div className="row">
           {cto.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6 mx-auto">
+            <div key={index} className="col-lg-3 col-sm-6 mx-auto">
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
@@ -41,13 +41,13 @@ export default function TeamPage() {
                 memberSocial={item.memberSocial}
               />
               <Spacing lg="80" md="30" />
-            </Div>
+            </div>
           ))}
-        </Div>
+        </div>
         {/* <Spacing lg="40" md="0" /> */}
-        <Div className="row">
+        <div className="row">
           {facultyTeam.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6 mx-auto">
+            <div key={index} className="col-lg-3 col-sm-6 mx-auto">
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
@@ -55,9 +55,9 @@ export default function TeamPage() {
                 memberSocial={item.memberSocial}
               />
               <Spacing lg="80" md="30" />
-            </Div>
+            </div>
           ))}
-        </Div>
+        </div>
         <Spacing lg="70" md="50" />
         <SectionHeading
           title="Amazing Core Team"
@@ -65,9 +65,9 @@ export default function TeamPage() {
           variant="cs-style1 text-center"
         />
         <Spacing lg="70" md="50" />
-        <Div className="row">
+        <div className="row">
           {COCoreTeam.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6">
+            <div key={index} className="col-lg-3 col-sm-6">
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
@@ -75,12 +75,12 @@ export default function TeamPage() {
                 memberSocial={item.memberSocial}
               />
               <Spacing lg="80" md="30" />
-            </Div>
+            </div>
           ))}
-        </Div>
-        <Div className="row">
+        </div>
+        <div className="row">
           {EJCoreTeam.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6">
+            <div key={index} className="col-lg-3 col-sm-6">
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
@@ -88,12 +88,12 @@ export default function TeamPage() {
                 memberSocial={item.memberSocial}
               />
               <Spacing lg="80" md="30" />
-            </Div>
+            </div>
           ))}
-        </Div>
-        <Div className="row">
+        </div>
+        <div className="row">
           {IFCoreTeam.map((item, index) => (
-            <Div key={index} className="col-lg-3 col-sm-6">
+            <div key={index} className="col-lg-3 col-sm-6">
               <Team
                 memberImage={item.memberImage}
                 memberName={item.memberName}
@@ -101,19 +101,19 @@ export default function TeamPage() {
                 memberSocial={item.memberSocial}
               />
               <Spacing lg="80" md="30" />
-            </Div>
+            </div>
           ))}
-        </Div>
-      </Div>
+        </div>
+      </div>
       <SectionHeading
         title="Brilliant Domain Heads"
         subtitle=" Our Domain Heads"
         variant="cs-style1 text-center"
       />
       <Spacing lg="70" md="50" />
-      <Div>
+      <div>
         <FlowingMenu items={domainHeads} />
-      </Div>
+      </div>
       <Spacing lg="70" md="50" />
     </>
   );

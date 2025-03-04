@@ -2,12 +2,12 @@ import Div from "../Div";
 
 export default function VerticalLinks({ title, data, variant }) {
   return (
-    <Div
+    <div
       className={`cs-hero_social_wrap cs-primary_font cs-primary_color ${
         variant ? variant : ""
       }`}
     >
-      {title && <Div className="cs-hero_social_title">{title}</Div>}
+      {title && <div className="cs-hero_social_title">{title}</div>}
       {data && (
         <ul className="cs-hero_social_links">
           {data.map((item, index) => (
@@ -19,6 +19,6 @@ export default function VerticalLinks({ title, data, variant }) {
           ))}
         </ul>
       )}
-    </Div>
+    </div>
   );
 }

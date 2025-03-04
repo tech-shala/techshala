@@ -23,16 +23,16 @@ export default function Header({ variant }) {
           variant ? variant : ""
         } cs-sticky_header ${isSticky ? "cs-sticky_header_active" : ""}`}
       >
-        <Div className="cs-main_header">
-          <Div className="container">
-            <Div className="cs-main_header_in">
-              <Div className="cs-main_header_left">
+        <div className="cs-main_header">
+          <div className="container">
+            <div className="cs-main_header_in">
+              <div className="cs-main_header_left">
                 <Link className="cs-site_branding" href="/">
                   <img src="/logo_transparent.png" alt="Logo" />
                 </Link>
-              </Div>
-              <Div className="cs-main_header_center">
-                <Div className="cs-nav cs-primary_font cs-medium">
+              </div>
+              <div className="cs-main_header_center">
+                <div className="cs-nav cs-primary_font cs-medium">
                   <ul
                     className="cs-nav_list"
                     style={{ display: `${mobileToggle ? "block" : "none"}` }}
@@ -90,11 +90,11 @@ export default function Header({ variant }) {
                   >
                     <span></span>
                   </span>
-                </Div>
-              </Div>
-            </Div>
-          </Div>
-        </Div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
     </>
   );

@@ -61,9 +61,9 @@ export default function ContactPage() {
         pageLinkText="Contact"
       />
       <Spacing lg="150" md="80" />
-      <Div className="container">
-        <Div className="row">
-          <Div className="col-lg-6">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
             <SectionHeading
               title="Have a Tech Idea?<br/>We're Here to Help!"
               subtitle="Getting Touch"
@@ -71,10 +71,10 @@ export default function ContactPage() {
             <Spacing lg="55" md="30" />
             <ContactInfoWidget withIcon />
             <Spacing lg="0" md="50" />
-          </Div>
-          <Div className="col-lg-6">
+          </div>
+          <div className="col-lg-6">
             <form onSubmit={sendMessage} className="row">
-              <Div className="col-sm-6">
+              <div className="col-sm-6">
                 <label className="cs-primary_color">Full Name*</label>
                 <input
                   type="text"
@@ -84,8 +84,8 @@ export default function ContactPage() {
                   required
                 />
                 <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
+              </div>
+              <div className="col-sm-6">
                 <label className="cs-primary_color">Email*</label>
                 <input
                   type="email"
@@ -95,8 +95,8 @@ export default function ContactPage() {
                   required
                 />
                 <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
+              </div>
+              <div className="col-sm-6">
                 <label className="cs-primary_color">Mobile*</label>
                 <input
                   type="text"
@@ -106,8 +106,8 @@ export default function ContactPage() {
                   required
                 />
                 <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-6">
+              </div>
+              <div className="col-sm-6">
                 <label className="cs-primary_color">Enquiry Type</label>
                 {/* write dropdown with 2 options */}
                 <select
@@ -126,8 +126,8 @@ export default function ContactPage() {
                   <option value="Other">Other</option>
                 </select>
                 <Spacing lg="20" md="20" />
-              </Div>
-              <Div className="col-sm-12">
+              </div>
+              <div className="col-sm-12">
                 <label className="cs-primary_color">Message</label>
                 <textarea
                   cols="30"
@@ -137,8 +137,8 @@ export default function ContactPage() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <Spacing lg="25" md="25" />
-              </Div>
-              <Div className="col-sm-12">
+              </div>
+              <div className="col-sm-12">
                 <button
                   className="cs-btn cs-style1"
                   type="submit"
@@ -147,20 +147,20 @@ export default function ContactPage() {
                   <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                   {!isSubmitting && <Icon icon="bi:arrow-right" />}
                 </button>
-              </Div>
+              </div>
             </form>
-          </Div>
-        </Div>
-      </Div>
-      <Spacing lg="150" md="80" />
-      <Div className="cs-google_map">
+          </div>
+        </div>
+      </div>
+      {/* <Spacing lg="150" md="80" />
+      <div className="cs-google_map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.95556040178!2d72.8699477!3d19.021679799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf48beff6adb%3A0x8b57459cf41f7a2c!2sVidyalankar%20Polytechnic!5e0!3m2!1sen!2sin!4v1739868578983!5m2!1sen!2sin"
           allowFullScreen
           title="Google Map"
           loading="lazy"
         />
-      </Div>
+      </div> */}
       <Spacing lg="50" md="40" />
     </>
   );

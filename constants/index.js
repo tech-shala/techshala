@@ -148,6 +148,9 @@ export const events = {
         }
       ]
     }
+  },
+  techfest: {
+    
   }
 };
 

@@ -52,10 +52,10 @@ export default function EventsPage() {
         pageLinkText="Events"
       />
       <Spacing lg="145" md="80" />
-      <Div className="container">
-        <Div className="cs-portfolio_1_heading">
+      <div className="container">
+        <div className="cs-portfolio_1_heading">
           <SectionHeading title="All Events" subtitle="Our Events" />
-          <Div className="cs-filter_menu cs-style1">
+          <div className="cs-filter_menu cs-style1">
             <ul className="cs-mp0 cs-center">
               <li className="active">
                 <span onClick={() => router.push("/events")}>All</span>
@@ -68,12 +68,12 @@ export default function EventsPage() {
                 </li>
               ))}
             </ul>
-          </Div>
-        </Div>
+          </div>
+        </div>
         <Spacing lg="90" md="45" />
-        <Div className="row">
+        <div className="row">
           {flattenEvents.slice(0, itemShow).map((event, index) => (
-            <Div className="col-lg-4" key={index}>
+            <div className="col-lg-4" key={index}>
               <Portfolio
                 title={event.title}
                 subtitle={`${event.date} - ${event.status}`}
@@ -82,11 +82,11 @@ export default function EventsPage() {
                 variant="cs-style1 cs-type1"
               />
               <Spacing lg="25" md="25" />
-            </Div>
+            </div>
           ))}
-        </Div>
+        </div>
 
-        <Div className="text-center">
+        <div className="text-center">
           {flattenEvents.length <= itemShow ? (
             ""
           ) : (
@@ -101,8 +101,8 @@ export default function EventsPage() {
               </span>
             </>
           )}
-        </Div>
-      </Div>
+        </div>
+      </div>
       <Spacing lg="70" md="50" />
     </>
   );
