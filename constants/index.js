@@ -154,9 +154,6 @@ export const events = {
       ],
     },
   },
-<<<<<<< Updated upstream
-  techfest: {},
-=======
   techfest: [
     {
       title: "Poster Presentation",
@@ -424,7 +421,6 @@ export const events = {
       instructors: [],
     },
   ],
->>>>>>> Stashed changes
 };
 
 export const cto = [
