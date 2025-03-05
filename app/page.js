@@ -11,6 +11,7 @@ import Card from "./ui/Card";
 import { funfaceData } from "@/constants";
 import EventSlider from "./ui/Slider/EventSlider";
 import { events } from "@/constants";
+import SponsorsSection from "@/app/ui/Sponsors";
 
 // Hero Social Links
 const heroSocialLinks = [
@@ -24,25 +25,26 @@ const heroSocialLinks = [
   },
 ];
 
-
 export default function Home() {
   // Process events data
-  const allEvents = Object.values(events).flatMap(domain => Object.values(domain));
+  const allEvents = Object.values(events).flatMap((domain) =>
+    Object.values(domain)
+  );
 
   const currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0); // Normalize to midnight for accurate comparison
 
-  const filteredEvents = allEvents.filter(event => {
-    const [day, month, year] = event.date.split('-');
+  const filteredEvents = allEvents.filter((event) => {
+    const [day, month, year] = event.date.split("-");
     const eventDate = new Date(`${year}-${month}-${day}`);
     eventDate.setHours(0, 0, 0, 0);
     return eventDate >= currentDate;
   });
 
   filteredEvents.sort((a, b) => {
-    const [aDay, aMonth, aYear] = a.date.split('-');
+    const [aDay, aMonth, aYear] = a.date.split("-");
     const aDate = new Date(`${aYear}-${aMonth}-${aDay}`);
-    const [bDay, bMonth, bYear] = b.date.split('-');
+    const [bDay, bMonth, bYear] = b.date.split("-");
     const bDate = new Date(`${bYear}-${bMonth}-${bDay}`);
     return aDate - bDate;
   });
@@ -66,9 +68,7 @@ export default function Home() {
 
       {/* Start FunFact Section */}
       <div className="container">
-        <FunFact
-          variant="cs-type1"
-        />
+        <FunFact variant="cs-type1" />
       </div>
       {/* End FunFact Section */}
 
@@ -154,6 +154,8 @@ export default function Home() {
         </div>
       </div>
       {/* End Domains Section */}
+
+      <SponsorsSection />
 
       {/* Start Events Section */}
       <Spacing lg="150" md="50" />
